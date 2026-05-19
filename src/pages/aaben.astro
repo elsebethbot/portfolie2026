@@ -1,0 +1,88 @@
+---
+import '../styles/global.css' 
+import Header from '../components/header.astro'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta name="generator" content={Astro.generator} />
+		<title>pruttefolie</title>
+	</head>
+
+<body class="m-0 bg-[url('billeder/rulle.png')] bg-cover bg-fixed">
+    <Header/>
+
+
+    <div class="grid grid-cols-4 grid-rows-60 p-5">
+
+        <!-- forsidedansere -->
+        <div class="row-start-2 col-start-2 row-span-2 place-self-center">
+            <img src="/billeder/aabenOel/dansere/dans17.png">
+        </div>
+        <div class="row-start-10 col-start-1 row-span-3 col-span-2">
+            <img src="/billeder/aabenOel/dansere/dans2.png" class="w-80">
+        </div>
+        <div class="row-start-9 col-start-3 row-span-2 col-span-2 place-self-center">
+            <img src="/billeder/aabenOel/dansere/dans3.png">
+        </div>
+        <div class="row-start-5 col-start-1 row-span-4 col-span-2">
+            <img src="/billeder/aabenOel/dansere/dans4.png" class="w-80">
+        </div>
+        <div class="row-start-6 col-start-3 row-span-4 col-span-2 place-self-end pb-20">
+            <img src="/billeder/aabenOel/dansere/dans8.png" class="w-90">
+        </div>
+        <div class="row-start-13 col-start-2 row-span-2 col-span-1 place-self-center">
+            <img src="/billeder/aabenOel/dansere/dans1.png" class="">
+        </div>
+        <div class="row-start-3 col-start-3 row-span-2 col-span-2 place-self-end pr-8">
+            <img src="/billeder/aabenOel/dansere/dans7.png">
+        </div>
+        <div class="row-start-6 col-start-2 row-span-3 col-span-2">
+            <img src="/billeder/aabenOel/dansere/dans5.png">
+        </div>
+        <div class="row-start-12 col-start-3 row-span-3 col-span-2">
+            <img src="/billeder/aabenOel/dansere/dans12.png">
+        </div>
+
+
+        <div class="row-start-7 col-start-1 col-span-3 row-span-4 place-self-center">
+            <p class="font-serif text-center italic text-blue-600 text-[80px]">
+                you actually should judge a beer
+                <br> by it's label
+            </p>
+        </div>
+
+        <div class="z-0 row-start-16 col-start-1 col-span-4 row-span-8">
+            <img src="/billeder/cphdox/graa.png" class="w-180 blur-3xl hue-rotate-90 contrast-10">
+        </div>
+        <div class="z-5 row-start-16 col-start-1 col-span-3 row-span-3 place-self-center saturate-100">
+            <video autoplay muted loop controls >
+                <source src="/billeder/aabenOel/aabenDemo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- have a drink -->
+        <div class="row-start-15 col-start-4 col-span-2 row-span-2">
+            <img src="http://dl.glitter-graphics.net/pub/888/888381o7uflafkhe.gif" width=298 height=371>
+        </div>
+
+        <div class="row-start-18 col-start-1 col-span-3 row-span-4 place-self-center">
+            <p class="font-serif text-center italic text-blue-600 text-[80px]" lang="da">
+                åben
+            </p>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
