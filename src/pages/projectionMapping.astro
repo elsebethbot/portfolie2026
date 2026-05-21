@@ -3,33 +3,39 @@ import '../styles/global.css'
 import Header from '../components/header.astro'
 ---
 
-<!-- bg-[url('billeder/rulle.png')] bg-cover bg-fixed -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>EDUPSCH</title>
+	</head>
 
-<body class="m-0">
+<body class="m-0 pt-15">
 
     
     <Header/>
     
-
-    <div class="grid grid-cols-4 grid-rows-33 p-5
+    <!-- grid-rows-33 -->
+    <div class="grid grid-cols-4 p-5
     md:grid-cols-11">
         
 
-        <div class="row-start-4 col-start-1 col-span-4 row-span-4 place-self-center
+        <div class="row-start-4 col-start-1 col-span-4 row-span-4 place-self-center pt-5
         md:row-start-2 md:col-start-1 md:row-span-4 md:col-span-11">
             <img src="/billeder/projectionmapping/PMproces.gif" class="w-220 saturate-200">
         </div>
 
-        <div class="row-start-2 col-start-1 row-span-2 col-span-4 place-self-center
+        <div class="row-start-2 col-start-1 row-span-2 col-span-4 place-self-center p-5
         md:row-start-1 md:col-start-3 md:col-span-7 md:row-span-1">
-            <p class="text-[80px] font-serif italic text-blue-600 text-center"> 
+            <p class="text-[50px] font-serif italic text-blue-600 text-center"> 
                 a heart turned cold
             </p>
         </div>
         
         <div class="z-0 row-start-8 col-span-4 row-span-5
         md:row-start-6">
-            <p class="font-serif text-blue-600 text-[40px]">
+            <p class="font-serif text-blue-600 text-[20px]">
                 this is an interactive installation, interpreting the H.C. Andersen fairytale <span class="font-bold italic">"The Snow Queen".</span>
                 <br> 
                 <br> made possible with touchdesigner, the viewer sensed both a flourishing rose garden, & an ice cold forest, leading to the Queens Castle.
@@ -39,19 +45,19 @@ import Header from '../components/header.astro'
         </div>
 
 
-        <div class="row-start-16 col-start-1 col-span-4 row-span-6 ">
+        <div class="row-start-16 col-start-1 col-span-4 row-span-6 p-1">
             <img src="/billeder/projectionmapping/mathias.jpeg" class="saturate-200">
         </div>
 
-        <div class="row-start-22 col-start-1 col-span-4 row-span-4 place-self-center">
+        <div class="row-start-23 col-start-1 col-span-4 row-span-4 place-self-center p-1">
             <img src="/billeder/projectionmapping/PM1.gif" class="w-230 saturate-200">
         </div>
-        <div class="row-start-27 col-start-1 col-span-4 row-span-4 place-self-center">
+        <div class="row-start-27 col-start-1 col-span-4 row-span-4 place-self-center p-1">
             <img src="/billeder/projectionmapping/gardin.gif" class="w-230 saturate-200">
         </div>
 
-        <div class="row-start-32 col-start-1 col-span-2 row-span-2">
-            <p class="font-serif italic text-blue-600 text-[40px]">
+        <div class="row-start-32 col-start-1 col-span-3 row-span-2 pt-10">
+            <p class="font-serif italic text-blue-600 text-[20px]">
                 made this 2gether with victoria & gustav.
             </p>
         </div>
@@ -62,14 +68,14 @@ import Header from '../components/header.astro'
         <!-- GLITTER GRAPHICS -->
 
         <!-- snefald -->
-        <div class="z-0 row-start-1 col-start-1 row-span-6 col-span-4
+        <div class="z-0 row-start-1 col-start-1 row-span-6 col-span-4 pt-3
         md:hidden">
             <img src="http://dl10.glitter-graphics.net/pub/794/794030y9lhwmvbm1.gif" class="w-full">
         </div>
         
         <!-- rose -->
         <div class="z-10 row-start-13 col-start-2 row-span-2 col-span-2 place-self-center">
-            <img class="" src="http://dl.glitter-graphics.net/pub/420/420021lpjc7ug7l1.gif" width=135 height=191> 
+            <img class="p-5" src="http://dl.glitter-graphics.net/pub/420/420021lpjc7ug7l1.gif" width=135 height=191> 
         </div>
         
         
@@ -79,3 +85,4 @@ import Header from '../components/header.astro'
     </div>
 
 </body>
+</html>
