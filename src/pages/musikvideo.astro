@@ -2,13 +2,20 @@
 import '../styles/global.css' 
 import Header from '../components/header.astro'
 ---
-<!-- bg-[url('/billeder/rulle.png')] bg-cover bg-top bg-scroll md:bg-fixed -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>EDUPSCH</title>
+	</head>
 
-<body class="m-0 ">
+<body class="m-0 pt-15">
 
     <Header/>
 
-    <div class="grid grid-cols-4 grid-rows-26 p-5 isolate">
+    <!-- grid-rows-26 -->
+    <div class="grid grid-cols-4 p-5 ">
 
         
         <div class="row-start-6 col-start-2 col-span-2 row-span-2 place-self-center grayscale z-0">
@@ -23,7 +30,7 @@ import Header from '../components/header.astro'
         </div>
         
         <div class="row-start-2 col-start-1 col-span-4 row-span-4">
-            <p class="font-serif text-blue-600 text-[70px]">
+            <p class="font-serif text-blue-600 text-[30px]">
                 have you ever had a dream that you, um, you had, your, you- you could, you'll do, you- you wants, you, you could do so, you- you'll do, you could- you, you want, you want them to do you so much you could do anything?
             </p>
         </div>
@@ -127,11 +134,5 @@ import Header from '../components/header.astro'
 
     </div>
 
-
-
-
-    
-   
-
-
 </body>
+</html>
