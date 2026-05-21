@@ -8,37 +8,37 @@ import Header from '../components/header.astro'
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>EDUPSCH</title>
 	</head>
 
-<body class="m-0">
+<body class="m-0 pt-15">
     <Header/>
 
-
-    <div class="grid grid-cols-4 grid-rows-45 p-5
-    lg:grid-cols-12 lg:grid-rows-40">
+    <!-- grid-rows-45 -->
+    <div class="grid grid-cols-4  p-5
+    md:grid-cols-12 md:grid-rows-40">
 
 
         <div class="row-start-2 col-start-1 col-span-1 row-span-2 place-self-center
-        lg:row-start-1 lg:col-start-1 lg:row-span-2 lg:col-span-3">
+        md:row-start-1 md:col-start-1 md:row-span-2 md:col-span-3">
             <img src="/billeder/aabenOel/beer1.gif">
         </div>
         <div class="row-start-2 col-start-2 col-span-1 row-span-2 place-self-center
-        lg:row-start-1 lg:col-start-4 lg:row-span-2 lg:col-span-3">
+        md:row-start-1 md:col-start-4 md:row-span-2 md:col-span-3">
             <img src="/billeder/aabenOel/beer2.gif">
         </div>
         <div class="row-start-2 col-start-3 col-span-1 row-span-2 place-self-center
-        lg:row-start-1 lg:col-start-7 lg:row-span-2 lg:col-span-3">
+        md:row-start-1 md:col-start-7 md:row-span-2 md:col-span-3">
             <img src="/billeder/aabenOel/beer3.gif">
         </div>
         <div class="row-start-2 col-start-4 col-span-1 row-span-2 place-self-center
-        lg:row-start-1 lg:col-start-10 lg:row-span-2 lg:col-span-3">
+        md:row-start-1 md:col-start-10 md:row-span-2 md:col-span-3">
             <img src="/billeder/aabenOel/beer4.gif">
         </div>
 
-        <div class="lg:hidden">
+        <!-- <div class="md:hidden">
 
             <div class="row-start-4 col-start-1 col-span-1 row-span-2 place-self-center">
                 <img src="/billeder/aabenOel/beer4.gif">
@@ -78,15 +78,17 @@ import Header from '../components/header.astro'
             <div class="row-start-8 col-start-4 col-span-1 row-span-2 place-self-center">
                 <img src="/billeder/aabenOel/beer1.gif">
             </div>
-        </div>
+        </div> -->
 
-        <div class="row-start-11 col-start-1 col-span-4 place-self-center">
-            <p class="font-serif italic text-blue-600 text-[80px]">
+        <div class="row-start-11 col-start-1 col-span-4 place-self-center
+        md:row-start-3 md:col-start-2 md:col-span-8">
+            <p class="font-serif italic text-blue-600 text-[30px]
+            md:text-[40px]">
                 making labels for ÅBEN
             </p>
         </div>
         <div class="row-start-12 col-start-2 row-span-2 col-span-3 pl-15">
-            <p class="font-serif text-blue-600 text-[40px]">
+            <p class="font-serif text-blue-600 text-[20px]">
                 beer makes you dance silly.
                 <br> beer is rock 'n' roll.
                 <br> beer will make you giggle.
@@ -98,7 +100,7 @@ import Header from '../components/header.astro'
             <img src="http://dl.glitter-graphics.net/pub/888/888381o7uflafkhe.gif" width=298 height=371>
         </div>
         <div class="row-start-14 col-start-1 row-span-2 col-span-4">
-            <p class="font-serif text-blue-600 text-[40px]">
+            <p class="font-serif text-blue-600 text-[20px]">
                 for this project, I made a drawing tool, to generate unique labels for ÅBEN brewerys beer cans.
                 <br> 
                 <br> got a lot of inspiration from their existing visual style, but more so their love & passion for creating fun events, such as parties or the festival O Days.
@@ -112,16 +114,16 @@ import Header from '../components/header.astro'
         </div>
 
         <div class="row-start-20 col-start-2 row-span-2 col-span-3">
-            <p class="font-serif text-blue-600 text-[40px]">
+            <p class="font-serif text-blue-600 text-[20px]">
                 that's why the brush strokes are png's mainly of people dancing.
             </p>
         </div>
-        <div class="row-start-21 col-start-1 row-span-2 col-span-4">
-            <p class="font-serif text-blue-600 text-[40px]">
+        <div class="row-start-22 col-start-1 row-span-2 col-span-4">
+            <p class="font-serif text-blue-600 text-[20px]">
                 individually, they're kinda silly, but when drawn with, they create abstract patterns.
             </p>
         </div>
-        <div class="row-start-19 col-start-1 row-span-2 place-self-center">
+        <div class="row-start-20 col-start-1 row-span-2 place-self-center">
             <img src="/billeder/aabenOel/dansere/dans3.png">
         </div>
         <div class="row-start-21 col-start-3 row-span-2 col-span-2 place-self-center">
