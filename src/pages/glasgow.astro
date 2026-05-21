@@ -3,14 +3,22 @@ import '../styles/global.css'
 import Header from '../components/header.astro'
 ---
 
-<!-- bg-[url('billeder/rulle.png')] bg-cover bg-fixed -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta name="generator" content={Astro.generator} />
+		<title>EDUPSCH</title>
+	</head>
+
+
 
 <body class="m-0 ">
     <Header/>
     
 
     <div class="grid grid-cols-4 grid-rows-68 p-5
-    md:grid-rows-32 md:grid-cols-11">
+    md:grid-rows-35 md:grid-cols-11">
         
         <!-- slot emoji -->
         <p class="row-start-2 col-start-2 col-span-2 text-[60px] place-self-center
@@ -202,33 +210,37 @@ import Header from '../components/header.astro'
         </div>
 
         <div class="row-start-38 col-start-1 col-span-4 row-span-4
-        md:row-start-24 md:col-start-1 md:row-span-2 md:col-span-5 md:place-self-center">
+        md:row-start-23 md:col-start-2 md:row-span-4 md:col-span-9 ">
             <img src="/billeder/citybranding/building-wall.png">
         </div>
         <div class="row-start-42 col-start-1 col-span-4 row-span-4
-        md:row-start-25 md:col-start-7 md:row-span-2 md:col-span-5">
+        md:row-start-21 md:col-start-2 md:row-span-2 md:col-span-4">
             <img src="/billeder/citybranding/cykel.png">
         </div>
         <div class="row-start-46 col-start-1 col-span-4 row-span-4
         md:row-start-27 md:col-start-1 md:row-span-4 md:col-span-11">
-            <img src="/billeder/citybranding/galleri.png">
+            <img src="/billeder/citybranding/subway_sort.png">
         </div>
         <div class="hidden 
         md:inline md:row-start-20 md:col-start-8 md:col-span-4 md:row-span-2">
             <img src="/billeder/citybranding/reklame.png">
         </div>
         <div class="row-start-50 col-start-1 col-span-4 row-span-7
-        md:row-start-21 md:col-start-2 md:col-span-4">
+        md:row-start-31 md:col-start-2 md:col-span-4">
             <img src="/billeder/citybranding/fsf.jpg">
         </div>
         <div class="row-start-57 col-start-3 col-span-2 row-span-8
-        md:row-start-22 md:col-start-7 md:col-span-2">
+        md:row-start-31 md:col-start-8 md:col-span-2">
             <img src="/billeder/citybranding/bannerGif.gif">
         </div>
+        <!-- <div class="row-start-57 col-start-3 col-span-2 row-span-8
+        md:row-start-31 md:col-start-8 md:col-span-2">
+            <img src="/billeder/citybranding/Venue.png">
+        </div> -->
         
         
         <div class="row-start-57 col-start-1 col-span-2 row-span-6
-        md:row-start-19 md:col-start-7 md:col-span-4 md:row-span-1">
+        md:row-start-18 md:col-start-7 md:col-span-4 md:row-span-2 md:place-self-center">
             <p class="font-serif text-[40px] text-blue-600 hyphens-auto pr-5
             md:text-[20px]" lang="en">
                 this is when I started incorporating the song lyrics into the branding.
@@ -239,7 +251,7 @@ import Header from '../components/header.astro'
             </p>
         </div>
         <div class="row-start-62 col-start-1 row-span-2 place-self-center
-        md:row-start-31 md:col-start-5 md:place-self-auto">
+        md:row-start-34 md:col-start-5 md:place-self-auto">
             <img src="/billeder/citybranding/klistermaerke.png" class="w-50">
         </div>
         <div class="row-start-61 col-start-2 col-span-1 row-span-2 place-self-center
@@ -252,14 +264,14 @@ import Header from '../components/header.astro'
         </div>
 
         <div class="row-start-64 col-start-1 col-span-4 row-span-2
-        md:row-start-31 md:col-start-2 md:row-span-1 md:col-span-3 md:flex md:items-center">
+        md:row-start-34 md:col-start-2 md:row-span-1 md:col-span-3 md:flex md:items-center">
             <p class="font-serif italic text-[95px] text-blue-600
             md:text-[40px]">
                 main takeaways
             </p>
         </div>
         <div class="row-start-65 col-start-1 col-span-4 row-span-6
-        md:row-start-32 md:col-start-2 md:row-span-2 md:col-span-4">
+        md:row-start-35 md:col-start-2 md:row-span-2 md:col-span-4">
             <p class="font-serif text-[40px] text-blue-600 hyphens-auto
             md:text-[20px] md:hyphens-none" lang="en">
                 glasgow is not a popular city to visit. 
@@ -278,3 +290,5 @@ import Header from '../components/header.astro'
     </div>
 
 </body>
+
+</html>

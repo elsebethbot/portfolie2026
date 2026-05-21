@@ -3,7 +3,7 @@ import '../styles/global.css'
 import Header from '../components/header.astro'
 ---
 
-<!-- bg-[url('billeder/rulle.png')] bg-cover bg-fixed -->
+
 
 <html lang="en">
 	<head>
@@ -13,62 +13,71 @@ import Header from '../components/header.astro'
 		<title>EDUPSCH</title>
 	</head>
 
-<body class="m-0 ">
+<body class="m-0">
     <Header/>
 
 
-    <div class="grid grid-cols-4 grid-rows-45 p-5">
+    <div class="grid grid-cols-4 grid-rows-45 p-5
+    lg:grid-cols-12 lg:grid-rows-40">
 
-        <div class="row-start-2 col-start-1 col-span-1 row-span-2 place-self-center">
+
+        <div class="row-start-2 col-start-1 col-span-1 row-span-2 place-self-center
+        lg:row-start-1 lg:col-start-1 lg:row-span-2 lg:col-span-3">
             <img src="/billeder/aabenOel/beer1.gif">
         </div>
-        <div class="row-start-2 col-start-2 col-span-1 row-span-2 place-self-center">
+        <div class="row-start-2 col-start-2 col-span-1 row-span-2 place-self-center
+        lg:row-start-1 lg:col-start-4 lg:row-span-2 lg:col-span-3">
             <img src="/billeder/aabenOel/beer2.gif">
         </div>
-        <div class="row-start-2 col-start-3 col-span-1 row-span-2 place-self-center">
+        <div class="row-start-2 col-start-3 col-span-1 row-span-2 place-self-center
+        lg:row-start-1 lg:col-start-7 lg:row-span-2 lg:col-span-3">
             <img src="/billeder/aabenOel/beer3.gif">
         </div>
-        <div class="row-start-2 col-start-4 col-span-1 row-span-2 place-self-center">
+        <div class="row-start-2 col-start-4 col-span-1 row-span-2 place-self-center
+        lg:row-start-1 lg:col-start-10 lg:row-span-2 lg:col-span-3">
             <img src="/billeder/aabenOel/beer4.gif">
         </div>
 
-        <div class="row-start-4 col-start-1 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer4.gif">
-        </div>
-        <div class="row-start-4 col-start-2 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer1.gif">
-        </div>
-        <div class="row-start-4 col-start-3 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer2.gif">
-        </div>
-        <div class="row-start-4 col-start-4 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer3.gif">
-        </div>
+        <div class="lg:hidden">
 
-        <div class="row-start-6 col-start-1 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer3.gif">
-        </div>
-        <div class="row-start-6 col-start-2 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer4.gif">
-        </div>
-        <div class="row-start-6 col-start-3 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer1.gif">
-        </div>
-        <div class="row-start-6 col-start-4 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer2.gif">
-        </div>
-
-        <div class="row-start-8 col-start-1 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer2.gif">
-        </div>
-        <div class="row-start-8 col-start-2 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer3.gif">
-        </div>
-        <div class="row-start-8 col-start-3 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer4.gif">
-        </div>
-        <div class="row-start-8 col-start-4 col-span-1 row-span-2 place-self-center">
-            <img src="/billeder/aabenOel/beer1.gif">
+            <div class="row-start-4 col-start-1 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer4.gif">
+            </div>
+            <div class="row-start-4 col-start-2 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer1.gif">
+            </div>
+            <div class="row-start-4 col-start-3 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer2.gif">
+            </div>
+            <div class="row-start-4 col-start-4 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer3.gif">
+            </div>
+    
+            <div class="row-start-6 col-start-1 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer3.gif">
+            </div>
+            <div class="row-start-6 col-start-2 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer4.gif">
+            </div>
+            <div class="row-start-6 col-start-3 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer1.gif">
+            </div>
+            <div class="row-start-6 col-start-4 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer2.gif">
+            </div>
+    
+            <div class="row-start-8 col-start-1 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer2.gif">
+            </div>
+            <div class="row-start-8 col-start-2 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer3.gif">
+            </div>
+            <div class="row-start-8 col-start-3 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer4.gif">
+            </div>
+            <div class="row-start-8 col-start-4 col-span-1 row-span-2 place-self-center">
+                <img src="/billeder/aabenOel/beer1.gif">
+            </div>
         </div>
 
         <div class="row-start-11 col-start-1 col-span-4 place-self-center">
