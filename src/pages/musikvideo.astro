@@ -14,81 +14,108 @@ import Header from '../components/header.astro'
 
     <Header/>
 
-    <!-- grid-rows-26 -->
-    <div class="grid grid-cols-4 p-5 ">
+    
+    <div class="grid grid-cols-4 p-5 grid-rows-[repeat(32,auto)]
+    md:grid-cols-11 md:grid-rows-[repeat(48,auto)]">
 
-        
-        <div class="row-start-6 col-start-2 col-span-2 row-span-2 place-self-center grayscale z-0">
-            <img src="/billeder/musikvideo/boi.jpg" class="w-30 p-2">
-        </div>
-        <div class="row-start-8 col-start-2 col-span-2 place-self-center pl-3 pr-3">
-            <img src="http://dl.glitter-graphics.net/pub/621/621641xy2arhaa2t.gif" >
-        </div>
-
-        <!-- nattehimmel -->
-        <div class="row-start-5 col-start-4 row-span-2 place-self-center">
-            <img class="p-5" src="http://dl3.glitter-graphics.net/pub/1726/1726203ha2mjbxeje.gif" width=83 height=100 >
-        </div>
-        
-        <div class="row-start-2 col-start-1 col-span-4 row-span-4">
+        <div class="row-start-2 col-start-1 col-span-4 row-span-4
+        md:row-start-4 md:col-start-3 md:row-span-4 md:col-span-4">
             <p class="font-serif text-blue-600 text-[30px]">
                 have you ever had a dream that you, um, you had, your, you- you could, you'll do, you- you wants, you, you could do so, you- you'll do, you could- you, you want, you want them to do you so much you could do anything?
             </p>
         </div>
+        
+        <div class="row-start-6 col-start-2 col-span-2 row-span-2 place-self-center  
+        md:row-start-7 md:col-start-8 md:row-span-2 md:col-span-1 md:place-self-auto">
+            <img src="/billeder/musikvideo/boi.jpg" class="z-0 w-30 p-2 grayscale
+            md:p-0">
+        </div>
 
-        
-        
-        
-        <div class="z-10 row-start-9 col-start-1 row-span-2">
-            <img src="/billeder/musikvideo/boi.jpg" class="hue-rotate-90 invert w-30 place-self-center">
+        <!-- tribal divider -->
+        <div class="row-start-8 col-start-2 col-span-2 place-self-center 
+        md:row-start-9 md:col-start-8 md:row-span-1 md:col-span-1 md:place-self-auto">
+            <img class="pl-3 pr-3 md:pt-1" src="http://dl.glitter-graphics.net/pub/621/621641xy2arhaa2t.gif" >
+        </div>
+
+        <!-- nattehimmel -->
+        <div class="row-start-5 col-start-4 row-span-2 place-self-center
+        md:row-start-1 md:col-start-3 md:row-span-2 md_col-span-1 md:place-self-center">
+            <img class="p-5 md:p-3" src="http://dl3.glitter-graphics.net/pub/1726/1726203ha2mjbxeje.gif" width=83 height=100 >
         </div>
         
-        <div class="z-0 row-start-10 col-start-1 col-span-3 row-span-5">
-            <img src="/billeder/musikvideo/hvid.jpg" class="w-200 blur-3xl">
+
+        <div class="row-start-9 col-start-1 row-span-2
+        md:row-start-10 md:col-start-7 md:row-span-1 md:col-span-1">
+            <img src="/billeder/musikvideo/boi.jpg" class="hue-rotate-90 invert w-10 place-self-center z-10
+            md:w-10">
         </div>
+        
         
         
         <!-- regnbue -->
-        <div class="z-10 row-start-10 col-start-1 col-span-4 row-span-2">
-            <img class="w-full" src="http://dl7.glitter-graphics.net/pub/865/865387j5kbdyehac.gif" width=150 height=61>
+        <div class="row-start-10 col-start-1 col-span-4 row-span-2
+        md:row-start-12 md:col-start-4 md:row-span-3 md:col-span-5">
+            <img class="w-full z-10" src="http://dl7.glitter-graphics.net/pub/865/865387j5kbdyehac.gif" width=150 height=61>
         </div>
         
-        <p class="z-10 row-start-11 col-start-1 col-span-4 text-center font-serif italic text-blue-600 text-[40px]">
-            the lucid castle
-        </p>
-        <p class="z-10 row-start-12 col-start-1 col-span-4 font-serif text-center text-blue-600 text-[20px] pl-5">
-            you are caught in a lucid dream..
-            <br> you find yourself in a castle, where a sleepy queen reigns. be not afraid..
-        </p>
-        <div class="z-10 row-start-13 col-start-1 col-span-4 row-span-3 ">
+        <div class="row-start-11 col-start-1 col-span-4
+        md:row-start-14 md:col-start-4 md:row-span-1 md:col-span-5">
+            <p class="z-10 text-center font-serif italic text-blue-600 text-[40px]
+            md:text-[60px]">
+                the lucid castle
+            </p>
+        </div>
+
+        <div class="row-start-12 col-start-1 col-span-4
+        md:row-start-16 md:col-start-4 md:row-span-2 md:col-span-4">
+            <p class="z-10  font-serif text-center text-blue-600 text-[20px] pl-5
+            md:p-0">
+                you are caught in a lucid dream..
+                <br> you find yourself in a castle, where a sleepy queen reigns. be not afraid..
+            </p>
+        </div>
+
+        <div class="z-10 row-start-13 col-start-1 col-span-4 row-span-3 
+        md:row-start-20 md:col-start-1 md:row-span-1 md:col-span-11 md:pt-40">
             <video autoplay muted loop controls>
                 <source src="/billeder/musikvideo/lucidcastle.mp4" type="video/mp4">
             </video>
         </div>
 
 
-        <div class="z-10 row-start-16 col-start-2 col-span-3 row-span-2 pl-21">
-            <p class="font-serif text-blue-600 text-[20px] text-right">
+        <div class="row-start-16 col-start-2 col-span-3 row-span-2 
+        md:row-start-23 md:col-start-2 md:row-span-1 md:col-span-3">
+            <p class="z-10 font-serif text-blue-600 text-[20px] pl-21
+            md:text-left md:pl-0 md:pt-30">
                 i am very fascinated by dreams & memory & the (un)concious mind. 
             </p>
         </div>
-        <div class="z-10 row-start-18 col-start-2 col-span-3 row-span-4 pl-22">
-            <p class="font-serif text-blue-600 text-[20px] text-right">
+
+        <div class="row-start-18 col-start-2 col-span-3 row-span-4
+        md:row-start-26 md:col-start-2 md:row-span-3 md:col-span-4">
+            <p class="z-10 font-serif text-blue-600 text-[20px] pl-22
+            md:text-left md:pl-0 ">
                 in this dream, you will meet a biblically correct angel, a beefy (but tender) woman, illuminati himself & a monkey man looking for his monkey boy.
             </p>
         </div>
-        <div class="z-10 row-start-21 col-start-1 col-span-4 row-span-2 ">
-            <p class="font-serif text-blue-600 text-[20px]">
+
+        <div class="row-start-22 col-start-1 col-span-4 row-span-2 
+        md:row-start-32 md:col-start-2 md:row-span-1 md:col-span-4">
+            <p class="z-10 font-serif text-blue-600 text-[20px]">
                 the experience is made in blender & three.js in the span of ca. two weeks.
             </p>
         </div>
-        <div class="z-10 row-start-24 col-start-1 col-span-4 row-span-2 place-self-center">
-            <p class="font-serif italic text-blue-600 text-[40px] text-center">
+        <div class=" row-start-24 col-start-1 col-span-4 row-span-2 place-self-center
+        md:row-start-36 md:col-start-2 md:row-span-3 md:col-span-4">
+            <p class="z-10 font-serif italic text-blue-600 text-[40px] text-center
+            md:pt-10">
                 what was I thinking?! 
             </p>
         </div>
-        <div class="z-10 row-start-26 col-start-1 col-span-4 row-span-4">
-            <p class="font-serif text-blue-600 text-[20px] pl-8">
+        <div class=" row-start-26 col-start-1 col-span-4 row-span-4
+        md:row-start-40 md:col-start-2 md:row-span-8 md:col-span-4">
+            <p class="z-10 font-serif text-blue-600 text-[20px] pl-8
+            md:pl-0 md:pt-10">
                 I absolutely wanted to make something so twisted, that I would be afraid to actually show it to anyone.
                 <br> 
                 <br> very inspired by the indie game <span class="font-bold italic">"Crypt Underworld"</span> by Lilith Zone, i created my own dream world, where I am the sleepy queen.
@@ -100,27 +127,33 @@ import Header from '../components/header.astro'
         </div>
         
         <!-- drømmefanger -->
-       <div class="row-start-30 col-start-2 row-span-2 col-span-2 place-self-center pt-5">
-            <img class="w-full" src="http://dl6.glitter-graphics.net/pub/1941/1941536whig82new2.gif" width=201 height=289 >
+       <div class="row-start-30 col-start-2 row-span-2 col-span-2 place-self-center 
+       md:row-start-48 md:col-start-3 md:col-span-2 md:row-span-3">
+            <img class="w-full pt-5 md:w-30" src="http://dl6.glitter-graphics.net/pub/1941/1941536whig82new2.gif" width=201 height=289 >
        </div>
 
 
         
         <!-- små søde modeller -->
-        <div class="z-0 row-start-16 col-start-1 col-span-2">
-            <img class="w-80" src="/billeder/musikvideo/abedreng.gif" class="saturate-150">
+        <div class=" row-start-16 col-start-1 col-span-2
+        md:row-start-23 md:col-start-7 md:row-span-6 md:col-span-4">
+            <img class="z-0 w-80 md:pt-30 md:w-full" src="/billeder/musikvideo/abedreng.gif" class="saturate-150">
         </div>
-        <div class="row-start-17 col-start-1 col-span-2">
-            <img class="w-80" src="/billeder/musikvideo/engel.gif" class="saturate-150">
+        <div class="row-start-17 col-start-1 col-span-2
+        md:row-start-30 md:col-start-7 md:row-span-6 md:col-span-4">
+            <img class="w-80 md:w-full md:pt-1" src="/billeder/musikvideo/engel.gif" class="saturate-150">
         </div>
-        <div class="row-start-18 col-start-1 col-span-2">
-            <img class="w-80" src="/billeder/musikvideo/illuminati.gif" class="saturate-150">
+        <div class="row-start-18 col-start-1 col-span-2
+        md:row-start-36 md:col-start-7 md:row-span-6 md:col-span-4">
+            <img class="w-80 md:w-full md:pt-1" src="/billeder/musikvideo/illuminati.gif" class="saturate-150">
         </div>
-        <div class="row-start-19 col-start-1 col-span-2">
-            <img class="w-80" src="/billeder/musikvideo/meatlady.gif" class="saturate-150">
+        <div class="row-start-19 col-start-1 col-span-2
+        md:row-start-42 md:col-start-7 md:row-span-6 md:col-span-4">
+            <img class="w-80 md:w-full md:pt-1" src="/billeder/musikvideo/meatlady.gif" class="saturate-150">
         </div>
-        <div class="row-start-20 col-start-1 col-span-2">
-            <img class="w-80" src="/billeder/musikvideo/abefar.gif" class="saturate-150">
+        <div class="row-start-20 col-start-1 col-span-2
+        md:row-start-48 md:col-start-7 md:row-span-6 md:col-span-4">
+            <img class="w-80 md:w-full md:pt-1" src="/billeder/musikvideo/abefar.gif" class="saturate-150">
         </div>
 
         
