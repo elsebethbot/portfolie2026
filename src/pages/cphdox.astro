@@ -13,54 +13,94 @@ import Header from '../components/header.astro'
 	</head>
 
 
-<body class="m-0 pt-15">
+<body class="m-0 pt-15 md:pt-0">
     <Header/>
 
-    <!-- grid-rows-61 -->
+    
     <div class="grid grid-cols-4 p-5 grid-template-rows-[repeat(76,auto)]
-    md:grid-template-rows-[repeat(76,auto)]">
+    md:grid-cols-11 md:grid-template-rows-[repeat(76,auto)]">
 
         <!-- baggrunds gif -->
-        <div class="z-5 row-start-1 col-start-1 col-span-4 row-span-13 place-self-center">
+        <div class=" row-start-1 col-start-1 col-span-4 row-span-13 place-self-center
+        md:hidden">
             <img src="/billeder/cphdox/pretty.gif" class="saturate-100 w-300">
         </div>
-
+        <div class="hidden
+        md:inline md:row-start-1 md:col-start-1 md:row-span-7 md:col-span-11">
+            <img src="/billeder/cphdox/pretty_horisontal.gif" class="md:saturate-100 md:w-full">
+        </div>
+        
         <!-- tribal divider -->
-		<div class="z-5 row-start-15 col-start-2 col-span-2 row-span-2 place-self-center">
-			<img src="http://dl.glitter-graphics.net/pub/621/621641xy2arhaa2t.gif" width=300 height=111>
+		<div class="z-5 row-start-15 col-start-2 col-span-2 row-span-2 place-self-center
+        md:row-start-8 md:col-start-5 md:row-span-2 md:col-span-3 md:place-self-center">
+			<img class="md:pt-10" src="http://dl.glitter-graphics.net/pub/621/621641xy2arhaa2t.gif" width=300 height=111>
 		</div>
         
-        <div class="z-20 row-start-5 col-start-1 col-span-4 row-span-4">
+        <div class="z-20 row-start-5 col-start-1 col-span-4 row-span-4
+        md:row-start-3 md:col-start-5 md:row-span-2 md:col-span-3">
             <p class="font-serif italic text-center text-blue-600 text-[40px] p-10">
                 I also do live visuals & this is from CPH:DOX
             </p>
         </div>
 
-        <div class="z-0 row-start-16 col-start-1 col-span-3 row-span-8">
-            <img src="/billeder/musikvideo/hvid.jpg" class="w-200 blur-3xl">
-        </div>
-        <div class="z-10 row-start-17 col-start-1 col-span-4 row-span-4">
+        
+        <div class="z-10 row-start-17 col-start-1 col-span-4 row-span-4
+        md:row-start-10 md:col-start-3 md:row-span-2 md:col-span-4 md:pt-30">
             <p class="font-serif text-blue-600 text-[20px] hyphens-auto">
-                I've been doing live visuals since my stay at Engelsholm Højskole in the spring of 2021.
+                I've been doing live visuals since my stay at <span class="hidden md:inline"><br></span> Engelsholm Højskole in the spring of 2021.
                 <br> 
                 <br> this is my creative playground.
             </p>
         </div>
-        <div class="z-10 row-start-20 col-start-1 col-span-4 row-span-2">
+        <div class="z-10 row-start-20 col-start-1 col-span-4 row-span-2
+        md:row-start-12 md:col-start-3 md:row-span-1 md:col-span-3">
             <p class="font-serif italic text-blue-600 text-[40px]">
                 let's partiiiiiiii!
             </p>
         </div>
-        <div class="z-8 row-start-19 col-start-4 row-span-3 place-self-center p-4">
-            <img src="/billeder/cphdox/hahamig2.gif" class="saturate-200 w-50">
+        <div class="z-8 row-start-19 col-start-4 row-span-3 place-self-center 
+        md:row-start-13 md:col-start-4 md:row-span-3 md:col-span-1">
+            <img class="p-4 md:p-0" src="/billeder/cphdox/hahamig2.gif" class="saturate-200 w-50">
         </div>
-        <div class="z-10 row-start-22 col-start-2 col-span-3 row-span-2">
-            <p class="font-serif text-blue-600 text-[20px] hyphens-auto">
+
+        <!-- emojiesss -->
+        <div class="hidden
+        md:inline md:row-start-12 md:col-start-7">
+            <p class="text-[30px]">
+                🪩
+            </p>
+        </div>
+        <div class="hidden
+        md:inline md:row-start-14 md:col-start-6">
+            <p class="text-[30px]">
+                🦄
+            </p>
+        </div>
+        <div class="hidden
+        md:inline md:row-start-16 md:col-start-3">
+            <p class="text-[30px]">
+                🧃
+            </p>
+        </div>
+        <div class="hidden
+        md:inline md:row-start-15 md:col-start-8 md:row-span-2 md:place-self-center">
+            <p class="text-[30px]">
+                🎠
+            </p>
+        </div>
+
+
+        <div class="z-10 row-start-22 col-start-2 col-span-3 row-span-2
+        md:row-start-15 md:col-start-5 md:row-span-1 md:col-span-3">
+            <p class="font-serif text-blue-600 text-[20px] hyphens-auto
+            md:pl-10">
                 I got hired to do visuals at two parties hosted by CPH:DOX.
             </p>
         </div>
-        <div class="z-10 row-start-24 col-start-1 col-span-4 row-span-3">
-            <p class="font-serif text-blue-600 text-[20px] hyphens-auto" lang="en">
+        <div class="z-10 row-start-24 col-start-1 col-span-4 row-span-3
+        md:row-start-16 md:col-start-5 md:row-span-2 md:col-span-5">
+            <p class="font-serif text-blue-600 text-[20px] hyphens-auto
+            md:pt-10 md:pl-10" lang="en">
                 I had total creative freedom, so I decided to match the theme of the visuals, 
                 to the theme & aesthetics of the 
                 documentary <span class="font-bold italic">"Jaripeo"</span>, that had 
@@ -68,55 +108,81 @@ import Header from '../components/header.astro'
             </p>
         </div>
         
-        <div class="z-0 row-start-27 col-start-1 col-span-4 row-span-5 saturate-200">
-            <video autoplay muted loop controls class="border-5 border-pink-600">
+        <div class="z-0 row-start-27 col-start-1 col-span-4 row-span-5 saturate-200
+        md:row-start-18 md:col-start-3 md:row-span-5 md:col-span-7 md:pt-20">
+            <video autoplay muted loop controls class="border-5 border-pink-600 md:border-2">
                 <source src="/billeder/cphdox/charlottenborg1.mp4" type="video/mp4">
             </video>
         </div>
 
-        <div class="z-10 row-start-32 col-start-1 col-span-2 row-span-3 pt-10">
-            <p class="font-serif text-blue-600 text-[20px] hyphens-auto">
+        <div class="z-10 row-start-32 col-start-1 col-span-2 row-span-3 
+         md:row-start-23 md:col-start-4">
+            <p class="font-serif text-blue-600 text-[20px] pt-10 hyphens-auto
+            md:hyphens-none md:pt-30">
                 the visuals were personal, sensual, confrontational, colorful, shiny, engaging, funny & loud.
+                <span class="hidden md:inline"><br><br> just like the documentary.</span>
             </p>
         </div>
         <!-- MLP -->
-         <div class="z-10 row-start-33 col-start-3 col-span-2 row-span-3">
+         <div class="z-10 row-start-33 col-start-3 col-span-2 row-span-3
+         md:row-start-24 md:col-start-7 md:row-span-4 md:col-span-3">
             <img class="saturate-200" src="http://dl4.glitter-graphics.net/pub/1176/1176934fnbulcyxto.gif" width=645 height=452>
          </div>
 
 
-        <div class="z-8 row-start-36 col-start-1 col-span-4 row-span-3 place-self-center p-2">
-            <img src="/billeder/cphdox/girlgallop.gif">
+        <div class="z-8 row-start-36 col-start-1 col-span-4 row-span-3 place-self-center 
+        md:row-start-29 md:col-start-3 md:row-span-5 md:col-span-7">
+            <img class="p-2 md:p-0 md:w-220 md:pt-10" src="/billeder/cphdox/girlgallop.gif">
         </div>
         
-        <div class="z-8 row-start-44 col-start-1 col-span-4 row-span-3 place-self-center p-2">
-            <img src="/billeder/cphdox/horsies.gif" class="saturate-150">
+        <div class="z-8 row-start-44 col-start-1 col-span-4 row-span-3 place-self-center 
+        md:row-start-34 md:col-start-3 md:row-span-5 md:col-span-7">
+            <img src="/billeder/cphdox/horsies.gif" class="saturate-150 p-2 md:w-220 md:pt-10">
         </div>
 
-        <div class="z-8 row-start-50 col-start-1 col-span-4 row-span-3 place-self-center p-2">
-            <img src="/billeder/cphdox/oejne.gif" class="saturate-150">
+        <div class="z-8 row-start-50 col-start-1 col-span-4 row-span-3 place-self-center 
+        md:row-start-39 md:col-start-3 md:row-span-5 md:col-span-7">
+            <img src="/billeder/cphdox/oejne.gif" class="saturate-150 p-2 md:w-220 md:pt-10">
         </div>
 
-        <div class="z-8 row-start-55 col-start-1 col-span-4 row-span-3 place-self-center p-2">
-            <img src="/billeder/cphdox/BWmig.gif" class="saturate-150">
+        <div class="z-8 row-start-55 col-start-1 col-span-4 row-span-3 place-self-center 
+        md:row-start-44 md:col-start-3 md:row-span-5 md:col-span-7">
+            <img src="/billeder/cphdox/BWmig.gif" class="saturate-150 p-2 md:w-220 md:pt-10">
         </div>
 
-        <div class="row-start-60 col-start-1 col-span-4 row-span-3">
-            <p class="font-serif text-blue-600 text-[20px] hyphens-auto" lang="en">
+        <div class="hidden 
+        md:inline md:row-start-49 md:col-start-3 md:row-span-5 md:col-span-7">
+            <img src="/billeder/cphdox/mangeoejne.gif" class="saturate-150 p-2 md:w-220 md:pt-10">
+        </div>
+
+        <div class="row-start-60 col-start-1 col-span-4 row-span-3
+        md:row-start-54 md:col-start-4 md:row-span-2 md:col-span-4">
+            <p class="font-serif text-blue-600 text-[20px] hyphens-auto
+            md:pt-30" lang="en">
                 to make it even MORE fun, I aimed my iphone camera at the crowd, the dj 
                 & myself broadcasting them on the big screen, creating fierce moments of 
                 self expression.
             </p>
         </div>
 
-        <div class="z-0 row-start-63 col-start-1 col-span-4 row-span-5 saturate-200 p-2">
+        <div class="hidden
+        md:inline md:row-start-55 md:col-start-8 md:place-self-center">
+            <p class="text-[30px]">
+                💘
+            </p>
+        </div>
+
+        <div class="z-0 row-start-63 col-start-1 col-span-4 row-span-5 saturate-200 p-2
+        md:row-start-56 md:col-start-4 md:col-span-5 md:row-span-3 md:pt-8 md:p-0">
             <video autoplay muted loop controls class="border-2 border-pink-600">
                 <source src="/billeder/cphdox/liveeee2.mp4" type="video/mp4">
             </video>
         </div>
 
-        <div class="row-start-70 col-start-2 col-span-3 row-span-4">
-            <p class="font-serif italic text-blue-600 text-[40px] hyphens-auto" lang="en">
+        <div class="row-start-70 col-start-2 col-span-3 row-span-4
+        md:row-start-59 md:col-start-4 md:row-span-4 md:col-span-3">
+            <p class="font-serif italic text-blue-600 text-[40px] hyphens-auto
+            md:pt-30" lang="en">
                 i love my job, 
                 <br> it's so colorful 
                 <br> & i'm a great 
@@ -125,8 +191,9 @@ import Header from '../components/header.astro'
         </div>
 
 
-        <div class="row-start-75 col-start-2 col-span-2 row-span-2 place-self-center">
-            <img src="/billeder/cphdox/lol.gif" class="saturate-150 border-5 border-blue-600">
+        <div class="row-start-75 col-start-2 col-span-2 row-span-2 place-self-center
+        md:row-start-61 md:col-start-7">
+            <img src="/billeder/cphdox/lol.gif" class="saturate-150 border-5 border-blue-600 md:border-0">
         </div>
 
 
