@@ -1,0 +1,20 @@
+---
+const { trigger, src, width = "w-40" } = Astro.props;
+---
+
+<span id={trigger} class="cursor-pointer underline">{trigger}</span>
+
+<img id={`${trigger}-img`} src={src} 
+    class={`fixed pointer-events-none hidden ${width} z-50`}>
+
+<script define:vars={{ trigger }}>
+    const el = document.getElementById(trigger);
+    const img = document.getElementById(`${trigger}-img`);
+
+    el.addEventListener('mouseenter', () => img.classList.remove('hidden'));
+    el.addEventListener('mouseleave', () => img.classList.add('hidden'));
+    el.addEventListener('mousemove', (e) => {
+        img.style.left = (e.clientX + 15) + 'px';
+        img.style.top = (e.clientY + 15) + 'px';
+    });
+</script>

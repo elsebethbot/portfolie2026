@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css' 
 import Header from '../components/header.astro'
+import HoverImage from '../components/hoverImage.astro'
 ---
 
 <html lang="en">
@@ -16,38 +17,50 @@ import Header from '../components/header.astro'
 <body class="m-0 pt-15">
     <Header/>
     
-    <!-- grid-rows-68 -->
-    <div class="grid grid-cols-4 p-5
-    md:grid-rows-35 md:grid-cols-11">
+   
+    <div class="grid grid-cols-4 p-5 grid-rows-[repeat(122,auto)]
+    md:grid-cols-11 md:grid-rows-[repeat(37,auto)]">
         
         <!-- slot emoji -->
-        <p class="z-10 row-start-2 col-start-2 col-span-2 text-[60px] place-self-center
-        md:row-start-1 md:col-start-3 md:row-span-1 md:col-span-1 md:flex md:items-end md:justify-center md:place-self-auto">
-            &#x1F3F0; 
-        </p>
+        <div class="row-start-2 col-start-2 col-span-2
+        md:row-start-2 md:col-start-3 md:row-span-1 md:col-span-1 md:flex md:items-end md:justify-center">
+            <p class="z-10 text-[60px] place-self-center
+             md:text-[40px] md:place-self-auto">
+                &#x1F3F0; 
+            </p>
+        </div>
 
         <div class="hidden
-        md:inline md:row-start-1 md:col-start-6">
-            <img src="/billeder/citybranding/tile.jpg" class="md:w-13 md:saturate-200 md:hue-rotate-180 border-2 border-black">
+        md:inline md:row-start-1 md:col-start-5">
+            <img src="/billeder/citybranding/tile.jpg" class="md:w-13 md:saturate-200 md:hue-rotate-180">
         </div>
 
         <div class="z-10 row-start-3 col-start-2 col-span-2 row-span-3 place-self-center
-        md:z-10 md:row-start-1 md:col-start-7 md:col-span-2 md:row-span-2 md:flex md:items-start md:justify-center md:place-self-auto">
+        md:z-10 md:row-start-1 md:col-start-6 md:col-span-2 md:row-span-3 md:flex md:items-start md:justify-center md:place-self-auto">
             <img class="w-100 md:w-50" src="/billeder/citybranding/gGif.gif">
         </div>
-
-        <div class=" row-start-4 col-start-1 row-span-3
-        md:z-0 md:row-start-2 md:col-start-1 md:col-span-5 md:row-span-6 md:flex md:items-start md:justify-center">
-            <img class="w-full" src="/billeder/citybranding/dekorationer.png">
+    
+        <!-- tribal divider -->
+        <div class=" row-start-9 col-start-2 col-span-2 place-self-center
+        md:row-start-4 md:col-start-6 md:col-span-2 md:row-span-2  md:flex md:items-start md:justify-center md:place-self-auto">
+            <img class="z-10 p-8 md:z-10 md:pt-5 md:w-full" src="http://dl.glitter-graphics.net/pub/621/621641xy2arhaa2t.gif">
         </div>
 
+        <!-- dekorationer venstre -->
+        <div class=" row-start-4 col-start-1 row-span-3
+        md:z-0 md:row-start-4 md:col-start-1 md:col-span-5 md:row-span-20 md:flex md:items-start md:justify-center">
+            <img class="w-full" src="/billeder/citybranding/dekorationer.png">
+        </div>
+        
+        <!-- dekorationer højre -->
+        <div class="z-0 row-start-5 col-start-3 row-span-7 col-span-2
+        md:z-0 md:row-start-1 md:col-start-8 md:col-span-4 md:row-span-20 md:flex md:items-start md:justify-center">
+            <img class="w-50 md:w-200" src="/billeder/citybranding/dekorationer2.png">
+        </div>
+    
         <div class="z-0 row-start-2 col-start-4 row-span-3 col-span-1
         md:hidden">
             <img class="w-full md:w-200" src="/billeder/citybranding/dekorationer2.png">
-        </div>
-        <div class="z-0 row-start-5 col-start-3 row-span-7 col-span-2
-        md:z-0 md:row-start-1 md:col-start-8 md:col-span-4 md:row-span-6 md:flex md:items-start md:justify-center">
-            <img class="w-50 md:w-200" src="/billeder/citybranding/dekorationer2.png">
         </div>
 
         <div class="row-start-2 col-start-1 row-span-2 place-self-center
@@ -57,7 +70,7 @@ import Header from '../components/header.astro'
 
     
         <div class="z-10 row-start-6 col-start-1 row-span-2 col-span-4 place-self-center
-        md:z-10 md:row-start-2 md:col-start-1 md:col-span-3 md:row-span-1 md:place-self-auto md:flex md:justify-center">
+        md:z-10 md:row-start-3 md:col-start-1 md:col-span-3 md:row-span-1 md:place-self-auto">
             <p class="font-serif text-blue-600 text-[40px] text-center
             md:text-[30px] md:italic md:text-blue-600">
                 im not coming to glasgow
@@ -65,16 +78,11 @@ import Header from '../components/header.astro'
         </div>
         
 
-        <!-- tribal divider -->
-        <div class="z-10 row-start-9 col-start-2 col-span-2 place-self-center
-        md:z-10 md:row-start-2 md:col-start-7 md:col-span-2 md:row-span-1 md:pt-5 md:w-full p-8 md:flex md:items-start md:justify-center md:place-self-auto">
-			<img src="http://dl.glitter-graphics.net/pub/621/621641xy2arhaa2t.gif">
-        </div>
 
         <div class="z-10 row-start-10 col-start-1 col-span-4 row-span-4
-        md:z-10 md:row-start-2 md:col-start-1 md:col-span-4 md:row-span-1 md:place-self-auto md:flex md:items-end md:justify-center">
+        md:z-10 md:row-start-5 md:col-start-1 md:col-span-4 md:row-span-4 md:place-self-auto">
             <p class="font-serif text-blue-600 text-[20px] pl-5
-            md:text-[20px] md:text-blue-600 md:pl-5">
+            md:text-[20px] md:pl-5">
                 my most researched project yet. 
                 <br> listened to <span class="font-bold italic">"Glasgow"</span> by Jockstrap all day every day for two weeks (inspiring the project title).
                 <br>
@@ -86,37 +94,38 @@ import Header from '../components/header.astro'
 
         <!-- gothic lys -->
         <div class="row-start-14 col-start-1 row-span-4 
-        md:row-start-6 md:col-start-1 md:row-span-1 md:place-self-center">
-            <img class="pt-8" src="http://dl3.glitter-graphics.net/pub/2412/2412943ezxh69s19h.gif" width=186 height=351>
+        md:z-10 md:row-start-11 md:col-start-8 md:row-span-3 md:col-span-1 md:place-self-center">
+            <img class="z-10 pt-8" src="http://dl3.glitter-graphics.net/pub/2412/2412943ezxh69s19h.gif" width=186 height=351>
         </div>
 
 
         <div class="row-start-14 col-start-2 col-span-3 row-span-3 place-self-center
-        md:z-10 md:row-start-3 md:col-start-4 md:row-span-2 md:col-span-5 md:p-8">
+        md:z-10 md:row-start-10 md:col-start-4 md:row-span-3 md:col-span-5 ">
             <p class="font-serif italic text-[28px] text-blue-600
-            md:text-[50px]">
+            md:text-[50px] md:p-8">
                 presenting:
                 <br>a dynamic visual identity for glasgow
             </p>
         </div>
 
-        <div class="row-start-18 col-start-1 row-span-4 col-span-4 place-items-center pt-12
-        md:z-10 md:row-start-5 md:col-start-8 md:col-span-3 md:row-span-2 md:place-self-auto">
-            <img src="/billeder/citybranding/inspo.gif" class="w-full border-2 border-blue-600
-            md:border-4">
-        </div>
         <div class="row-start-17 col-start-2 col-span-2  place-self-center
-        md:z-10 md:row-start-5 md:col-start-6 md:col-span-1 md:place-self-auto md:text-center">
+        md:z-10 md:row-start-15 md:col-start-6 md:col-span-1 md:row-span-1 md:place-self-auto md:text-center">
             <p class="font-serif text-blue-600 text-[20px]
             md:text-[20px]">
                 the inspo :
             </p>
         </div>
+        <div class="row-start-18 col-start-1 row-span-4 col-span-4 place-items-center pt-12
+        md:z-10 md:row-start-17 md:col-start-8 md:col-span-3 md:row-span-4 md:place-self-auto">
+            <img src="/billeder/citybranding/inspo.gif" class="w-full  border-2 border-blue-600
+            md:border-4">
+        </div>
+
         <div class="row-start-22 col-start-1 col-span-4 row-span-2
-        md:z-10 md:row-start-4 md:col-start-5 md:col-span-3 md:row-span-2 md:flex md:items-end">
-            <p class="font-serif text-blue-600 text-[20px]  hyphens-auto
-            md:text-[20px]" lang="en">
-                very medieval, very pink, very raw & beautifully ornamented.
+        md:z-10 md:row-start-18 md:col-start-4 md:col-span-3 md:row-span-2 md:flex md:items-end">
+            <p class="font-serif text-blue-600 text-[20px] hyphens-auto
+            md:text-[20px] md:pl-10" lang="en">
+                very medieval, very punk, very raw & very beautifully ornamented.
                 <br> 
                 <br> i like how gray and industrial glasgow looks from the outside, contrasting the stunning gothic architechture.
             </p>
@@ -124,61 +133,61 @@ import Header from '../components/header.astro'
 
         <!-- gothic divider -->
         <div class="row-start-28 col-start-3 col-span-2 
-        md:inline md:row-start-6 md:col-start-6 md:col-span-4 md:row-span-2 md:place-self-center">
+        md:inline md:row-start-22 md:col-start-6 md:col-span-4 md:row-span-4 md:place-self-center">
             <img src="http://dl.glitter-graphics.net/pub/1267/1267191mfv4r3f4ab.gif" width=477 height=332>
         </div>
 
-        <div class="row-start-29 col-start-2 col-span-2 place-self-center pt-10 pb-10
-        md:row-start-7 md:col-start-6 md:col-span-1">
-            <p class="font-serif text-blue-600 text-[20px]
-            md:text-[20px]">
+        <div class="row-start-29 col-start-2 col-span-2 place-self-center 
+        md:row-start-27 md:col-start-6 md:col-span-1 md:row-span-1">
+            <p class="font-serif text-blue-600 text-[20px] pt-10 pb-10
+            md:text-[20px] md:pb-20">
                 the results :
             </p>
         </div>
 
-        <div class="row-start-30 col-start-1 col-span-4 row-span-2 p-1
-        md:row-start-8 md:col-start-7 md:col-span-5">
-        <img src="/billeder/citybranding/glasSort.png">
+        <div class="row-start-30 col-start-1 col-span-4 row-span-2 
+        md:row-start-30 md:col-start-7 md:col-span-5 md:row-span-2">
+            <img class="p-1" src="/billeder/citybranding/glasSort.png">
         </div>
-        <div class="row-start-33 col-start-1 col-span-4 row-span-2 p-1
-        md:row-start-10 md:col-start-1 md:col-span-5">
-        <img src="/billeder/citybranding/glasGray.png">
+        <div class="row-start-33 col-start-1 col-span-4 row-span-2 
+        md:row-start-30 md:col-start-1 md:col-span-5 md:row-span-2">
+            <img class="p-1" src="/billeder/citybranding/glasGray.png">
         </div>
-        <div class="row-start-36 col-start-1 col-span-4 row-span-2 p-1
-        md:row-start-10 md:col-start-7 md:col-span-5">
-        <img src="/billeder/citybranding/glasPink.png">
+        <div class="row-start-36 col-start-1 col-span-4 row-span-2 
+        md:row-start-33 md:col-start-1 md:col-span-5 md:row-span-2">
+            <img class="p-1" src="/billeder/citybranding/glasPink.png">
         </div>
         <div class="row-start-39 col-start-1 col-span-4 row-span-2 p-1
-        md:row-start-8 md:col-start-1 md:col-span-5">
+        md:row-start-33 md:col-start-7 md:col-span-5 md:row-span-2">
             <img src="/billeder/citybranding/grid2.jpg">
         </div>
         
         <div class="row-start-42 col-start-1 col-span-4 row-span-4
-        md:row-start-12 md:col-start-4 md:col-span-5">
+        md:row-start-36 md:col-start-4 md:col-span-5 md:row-span-3">
             <p class="font-serif text-blue-600 text-[20px] p-2 hyphens-auto
-            md:text-[20px]" lang="en">
+            md:text-[20px] md:hyphens-none md:pt-20" lang="en">
                 the pattern is based off gothic ornaments I noticed while strolling through the city on google maps.
                 <br> some of the shapes are traced from the font <span class="font-bold italic">"Flor De Ruina"</span> designed by Felipe Sanzana. 
                 <br>
-                <br> i placed the individual shapes in a grid, according to the principle of a recursive algorithm.
+                <br> i placed the individual shapes in a grid, according to the principle of a <HoverImage trigger="recursive algorithm." src="/billeder/citybranding/recursive.png" width="w-100"/>
             </p>
         </div>
 
         <div class="row-start-47 col-start-1 col-span-2 row-span-2
-        md:row-start-13 md:col-start-2 md:col-span-5 md:row-span-2">
-            <img src="/billeder/citybranding/A.png">
+        md:row-start-40 md:col-start-2 md:col-span-5 md:row-span-4">
+            <img class="pt-10" src="/billeder/citybranding/A.png">
         </div>
-        <div class="row-start-47 col-start-3 col-span-2 row-span-2 pl-2
-        md:row-start-13 md:col-start-8 md:col-span-4">
-        <img class="md:w-100" src="/billeder/citybranding/FlorDeRuina.png">
+        <div class="row-start-47 col-start-3 col-span-2 row-span-2 
+        md:row-start-40 md:col-start-8 md:col-span-4">
+            <img class="pl-2 md:w-full md:pt-10" src="/billeder/citybranding/FlorDeRuina.png">
         </div>
-        <div class="row-start-49 col-start-2 col-span-3 row-span-4 pt-5
-        md:row-start-14 md:col-start-7 md:col-span-5 md:row-span-2 md:place-self-center">
-            <img src="/billeder/citybranding/G.png">
+        <div class="row-start-49 col-start-2 col-span-3 row-span-4 
+        md:row-start-43 md:col-start-7 md:col-span-5 md:row-span-4 md:place-self-center">
+            <img class="pt-5" src="/billeder/citybranding/G.png">
         </div>
-        <div class="row-start-49 col-start-1 col-span-1 row-span-2 pt-5
-        md:row-start-15 md:col-start-2 md:row-span-2 md:col-span-4 md:p-0">
-            <img src="/billeder/citybranding/MOENSTRE.png">
+        <div class="row-start-49 col-start-1 col-span-1 row-span-2 
+        md:row-start-44 md:col-start-3 md:row-span-3 md:col-span-4">
+            <img class="pt-5 md:p-0" src="/billeder/citybranding/MOENSTRE.png">
         </div>
 
         <div class="row-start-53 col-start-1 col-span-4 row-span-2 pt-10
@@ -188,91 +197,89 @@ import Header from '../components/header.astro'
             </p>
         </div>
         <div class="hidden
-        md:inline md:row-start-17 md:col-start-2 md:row-span-1 md:col-span-6 md:place-self-center">
+        md:inline md:row-start-47 md:col-start-4 md:row-span-1 md:col-span-6 md:place-self-center">
             <p class="font-serif italic text-[95px] text-blue-600
-            md:text-[40px]">
-                & I began romantisizing 
+            md:text-[40px] md:p-30">
+                & in the proces, 
+                <br> I began romantisizing 
             </p>
         </div>
 
+        <!-- sværd divider -->
+        <div class="hidden 
+        md:inline md:row-start-52 md:col-start-7 md:row-span-1 md:col-span-4 md:place-self-center">
+            <img class="md:w-60 md:pt-5" src="http://dl9.glitter-graphics.net/pub/166/166739pkaj56t2b6.gif" width=500 height=139>
+        </div>
 
-        <div class="row-start-56 col-start-1 col-span-4 row-span-6 pt-5
-        md:inline md:row-start-18 md:col-start-3 md:col-span-4 md:row-span-3">
-            <img src="/billeder/citybranding/flotRulle.jpg">
+
+        <div class="row-start-56 col-start-1 col-span-4 row-span-6 
+        md:inline md:row-start-48 md:col-start-3 md:col-span-4 md:row-span-6">
+            <img class="pt-5" src="/billeder/citybranding/flotRulle.jpg">
         </div>
 
         <div class="row-start-63 col-start-1 col-span-4 row-span-7
-        md:row-start-18 md:col-start-7 md:col-span-4 md:row-span-2 md:place-self-center">
+        md:row-start-49 md:col-start-7 md:col-span-4 md:row-span-3 md:place-self-center">
             <p class="font-serif text-[20px] text-blue-600 hyphens-auto pr-5
             md:text-[20px]" lang="en">
                 I incorporated the song lyrics into the visual identity.
                 <br> 
                 <br> I found it funny that the protagonist doesn't want to go to glasgow.
                 <br> 
-                <br> I decided to use that as a bait to make people actually want to go visit glasgow - contrasting the image of rough industrial streets with baroque-esque finesse.
+                <br> I decided to use that as a bait to make people actually want to go visit glasgow - contrasting the image of rough industrial streets with baroque-esque drama.
             </p>
         </div>
 
-        <div class="row-start-70 col-start-1 col-span-4 row-span-4 pt-10 
-        md:inline md:row-start-20 md:col-start-8 md:col-span-4 md:row-span-2">
-            <img src="/billeder/citybranding/reklame.png">
+        <div class="row-start-70 col-start-1 col-span-4 row-span-4  
+        md:inline md:row-start-54 md:col-start-8 md:col-span-4 md:row-span-4">
+            <img class="pt-10 md:p-0" src="/billeder/citybranding/reklame.png">
         </div>
-        <div class="row-start-75 col-start-1 col-span-4 row-span-4 pt-2
-        md:inline md:row-start-20 md:col-start-8 md:col-span-4 md:row-span-2">
-            <img src="/billeder/citybranding/museumreklame.png">
+        <div class="row-start-75 col-start-1 col-span-4 row-span-4 
+        md:inline md:row-start-55 md:col-start-2 md:col-span-5 md:row-span-4">
+            <img class="pt-2 md:p-0" src="/billeder/citybranding/museumreklame.png">
         </div>
-        <div class="row-start-80 col-start-1 col-span-4 row-span-4 pt-2
-        md:row-start-23 md:col-start-2 md:row-span-4 md:col-span-9 ">
-            <img src="/billeder/citybranding/building-wall.png">
+        <div class="row-start-80 col-start-1 col-span-4 row-span-4 
+        md:row-start-61 md:col-start-2 md:row-span-6 md:col-span-5 ">
+            <img class="pt-2 md:pt-30" src="/billeder/citybranding/building-wall.png">
         </div>
-        <div class="row-start-85 col-start-1 col-span-4 row-span-4 pt-2
-        md:row-start-21 md:col-start-2 md:row-span-2 md:col-span-4">
-            <img src="/billeder/citybranding/cykel.png">
+        <div class="row-start-85 col-start-1 col-span-4 row-span-4 
+        md:row-start-61 md:col-start-8 md:row-span-6 md:col-span-5">
+            <img class="pt-2" src="/billeder/citybranding/cykel.png">
         </div>
-        <div class="row-start-90 col-start-1 col-span-4 row-span-4 pt-2
-        md:row-start-27 md:col-start-1 md:row-span-4 md:col-span-11">
-            <img src="/billeder/citybranding/subway_sort.png">
+        <div class="row-start-90 col-start-1 col-span-4 row-span-4 
+        md:row-start-68 md:col-start-1 md:row-span-1 md:col-span-11">
+            <img class="pt-2 md:pt-50" src="/billeder/citybranding/subway_sort.png">
         </div>
-        <div class="z-10 row-start-95 col-start-1 col-span-4 row-span-7 pt-2
-        md:row-start-31 md:col-start-2 md:col-span-4">
-            <img src="/billeder/citybranding/fsf.jpg">
+        <div class="z-10 row-start-95 col-start-1 col-span-4 row-span-7 
+        md:row-start-70 md:col-start-2 md:col-span-4">
+            <img class="pt-2 md:pt-50" src="/billeder/citybranding/fsf.jpg">
         </div>
-        <div class="z-10 row-start-103 col-start-2 col-span-2 row-span-8 pt-10
-        md:row-start-31 md:col-start-8 md:col-span-2">
-            <img src="/billeder/citybranding/bannerGif.gif">
+        <div class="z-10 row-start-103 col-start-2 col-span-2 row-span-8 
+        md:row-start-70 md:col-start-8 md:col-span-2">
+            <img class="pt-10 md:pt-50" src="/billeder/citybranding/bannerGif.gif">
         </div>
         
         
         
-        
-        <!-- <div class="row-start-62 col-start-1 row-span-2 place-self-center
-        md:row-start-34 md:col-start-5 md:place-self-auto">
-            <img src="/billeder/citybranding/klistermaerke.png" class="w-50">
-        </div> -->
-        <!-- <div class="row-start-61 col-start-2 col-span-1 row-span-2 place-self-center
-        md:hidden">
-            <img src="/billeder/citybranding/klistermaerke2.png" class="w-50">
-        </div> -->
         <div class="row-start-121 col-start-2 col-span-2 row-span-2 place-self-center p-10
         md:hidden">
             <img src="/billeder/citybranding/klistermaerke2.png" class="w-50">
         </div>
 
-        <div class="z-10 row-start-111 col-start-1 col-span-4 row-span-2 text-center pt-10
-        md:row-start-34 md:col-start-2 md:row-span-1 md:col-span-3 md:flex md:items-center">
-            <p class="font-serif italic text-[40px] text-blue-600
-            md:text-[40px]">
+        <div class="z-10 row-start-111 col-start-1 col-span-4 row-span-2 text-center 
+        md:row-start-77 md:col-start-2 md:row-span-1 md:col-span-3 md:flex md:items-center">
+            <p class="font-serif italic text-[40px] text-blue-600 pt-10
+            md:text-[40px] md:p-20">
                 main takeaways
             </p>
         </div>
 
         <div class="z-0 row-start-109 col-start-3 col-span-2 row-span-10
-        md:row-start-33 md:col-start-7 md:row-span-3 md:col-span-3 md:place-self-center">
+        md:row-start-77 md:col-start-7 md:row-span-3 md:col-span-3 md:place-self-center">
             <img class="w-full" src="/billeder/citybranding/dekorationer.png">
         </div>
 
         <div class="z-10 row-start-113 col-start-1 col-span-4 row-span-6
-        md:row-start-35 md:col-start-2 md:row-span-2 md:col-span-4">
+        md:row-start-78 md:col-start-2 md:row-span-2 md:col-span-4">
             <p class="font-serif text-[20px] text-blue-600 
             md:text-[20px] md:hyphens-none" lang="en">
                 glasgow is not a popular city to visit. 
