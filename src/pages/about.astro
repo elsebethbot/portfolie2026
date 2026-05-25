@@ -14,22 +14,17 @@ import Header from '../components/header.astro'
 
 
 
-    <body class="m-2 pt-15">
+    <body class="m-2 pt-15 invert bg-black">
         <Header/>
 
         <div class="grid grid-rows-20 grid-cols-5
-		md:grid md:grid-cols-10 md:grid-rows-9">
-
-            <div class="hidden
-             md:inline md:row-start-1 md:col-start-4 md:row-span-2 md:col-span-2">
-                <img class="md:w-40" src="/billeder/me.gif">
-            </div>
+		md:grid md:grid-cols-10 md:grid-rows-8">
 
             <div class="row-start-6 col-start-1 row-span-10 col-span-5
-             md:row-start-3 md:col-start-4 md:row-span-10 md:col-span-5">
+             md:row-start-2 md:col-start-4 md:row-span-10 md:col-span-5">
                 <p class="z-10 font-serif text-blue-600 text-[20px] hyphens-auto
                 md:text-[30px]">
-                    hey welcome to this page. 
+                    welcome to this page. 
                     <br> I want to tell you, that I am a storyteller. 
                     <br> doesn't have to be my own story, just stories of places, people, things &/or phenomena I find interesting.
                     <br> my portfolio is a collection of that.
@@ -54,14 +49,14 @@ import Header from '../components/header.astro'
 
             <!-- hjerte -->
             <div class="z-0 row-start-15 col-start-5 row-span-2 col-span-1
-            md:inline md:row-start-6 md:col-start-8 md:row-span-2 md:col-span-1">
-                <img class="w-10 md:w-10" src="http://dl10.glitter-graphics.net/pub/1010/1010710flw54kyeyn.gif">
+            md:inline md:row-start-4 md:col-start-8 md:row-span-2 md:col-span-1 md:place-self-center">
+                <img class="w-10 md:w-10 invert" src="http://dl10.glitter-graphics.net/pub/1010/1010710flw54kyeyn.gif">
             </div>
 
             <!-- fe -->
             <div class="row-start-1 col-start-1 row-span-5 col-span-2 place-self-center
-            md:inline md:row-start-8 md:col-start-7 md:row-span-2 md:col-span-2 md:place-self-center">
-                <img class="w-25 md:w-20 md:pl-5" src="http://dl4.glitter-graphics.net/pub/2052/2052534nwir18hn9l.gif">
+            md:inline md:row-start-6 md:col-start-8 md:row-span-2 md:col-span-2 md:place-self-center">
+                <img class="w-25 md:w-35 md:pl-5" src="http://dl4.glitter-graphics.net/pub/2052/2052534nwir18hn9l.gif">
             </div>
 
             <!-- øjne -->
@@ -71,7 +66,8 @@ import Header from '../components/header.astro'
                     <img src="http://dl.glitter-graphics.net/pub/127/127461l6gyj8vwix.gif" width=600 height=140>
                 </a>
 			</div>
-            <div class="row-start-18 col-start-2 row-span-1 col-span-3 place-self-center" >
+            <div class="row-start-18 col-start-2 row-span-1 col-span-3 place-self-center
+            md:hidden" >
                 <a href="/#myprojects">
                     <p class="underline font-serif text-blue-600 text-[15px]" >
                         have a look
