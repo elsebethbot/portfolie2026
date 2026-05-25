@@ -1,0 +1,95 @@
+---
+import '../styles/global.css' 
+import Header from '../components/header.astro'
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>EDUPSCH</title>
+	</head>
+
+
+
+    <body class="m-2 pt-15">
+        <Header/>
+
+        <div class="grid grid-rows-20 grid-cols-5
+		md:grid md:grid-cols-10 md:grid-rows-9">
+
+            <div class="hidden
+             md:inline md:row-start-1 md:col-start-4 md:row-span-2 md:col-span-2">
+                <img class="md:w-40" src="/billeder/me.gif">
+            </div>
+
+            <div class="row-start-6 col-start-1 row-span-10 col-span-5
+             md:row-start-3 md:col-start-4 md:row-span-10 md:col-span-5">
+                <p class="font-serif text-blue-600 text-[20px] hyphens-auto
+                md:text-[30px]">
+                    hey welcome to this page. 
+                    <br> I want to tell you, that I am a storyteller. 
+                    <br> doesn't have to be my own story, just stories of places, people, things &/or phenomena I find interesting.
+                    <br> my portfolio is a collection of that.
+                    <br> I get excited easily.
+                    <br> my portfolio is a visual reflection of that.
+                    <br> I am adventurous.
+                    <br> my portfolio is a map of my quests.
+                </p>
+            </div>
+
+            <!-- delfin -->
+            <!-- <div class="hidden
+            md:inline md:row-start-1 md:col-start-3 md:row-span-2 md:col-span-1 md:place-self-center">
+                <img class="md:w-20" src="http://dl9.glitter-graphics.net/pub/247/247389vdgmht8fbg.gif">
+            </div> -->
+
+            <!-- blomst -->
+            <div class="hidden
+            md:inline md:row-start-1 md:col-start-3 md:row-span-3 md:col-span-1 md:place-self-center">
+                <img class="md:w-20" src="http://dl5.glitter-graphics.net/pub/1667/1667735kfg3o87p34.gif">
+            </div>
+
+            <!-- hjerte -->
+            <div class="row-start-15 col-start-5 row-span-2 col-span-1
+            md:inline md:row-start-6 md:col-start-8 md:row-span-2 md:col-span-1">
+                <img class="w-10 md:w-10" src="http://dl10.glitter-graphics.net/pub/1010/1010710flw54kyeyn.gif">
+            </div>
+
+            <!-- fe -->
+            <div class="row-start-1 col-start-1 row-span-5 col-span-2 place-self-center
+            md:inline md:row-start-8 md:col-start-7 md:row-span-2 md:col-span-2 md:place-self-center">
+                <img class="w-25 md:w-20 md:pl-5" src="http://dl4.glitter-graphics.net/pub/2052/2052534nwir18hn9l.gif">
+            </div>
+
+            <!-- øjne -->
+            <div class="row-start-19 col-start-3 row-span-1 col-span-1
+			md:hidden">
+                <a href="/#myprojects">
+                    <img src="http://dl.glitter-graphics.net/pub/127/127461l6gyj8vwix.gif" width=600 height=140>
+                </a>
+			</div>
+            <div class="row-start-18 col-start-2 row-span-1 col-span-3 place-self-center" >
+                <a href="/#myprojects">
+                    <p class="underline font-serif text-blue-600 text-[15px]" >
+                        have a look
+                    </p>
+                </a>
+                
+            </div>
+    
+    
+    
+        </div>
+
+
+
+
+
+
+
+    </body>
+
+</html>
