@@ -14,16 +14,15 @@ import Header from '../components/header.astro'
 
 
 
-    <body class="m-2 pt-15 grayscale overflow-hidden bg-black">
-        <Header/>
+    <body class="m-2 grayscale overflow-hidden bg-black">
 
         <div class="grid grid-rows-20 grid-cols-5
-		md:grid md:grid-cols-10 md:grid-rows-8">
+		md:grid md:grid-cols-10 md:grid-rows-12">
 
             <div class="row-start-6 col-start-1 row-span-10 col-span-5
-             md:row-start-2 md:col-start-4 md:row-span-10 md:col-span-5">
+             md:row-start-5 md:col-start-4 md:row-span-10 md:col-span-4">
                 <p class="z-10 font-serif text-gray-300 text-[20px] hyphens-auto
-                md:text-[30px]">
+                md:text-[20px]">
                     welcome to this page. 
                     <br> I want to tell you, that I am a storyteller. 
                     <br> doesn't have to be my own story, just interesting stories of places, people, things &/or phenomena.
@@ -40,26 +39,26 @@ import Header from '../components/header.astro'
 
             <!-- hjerte -->
             <div class="z-0 row-start-14 col-start-5 row-span-2 col-span-1
-            md:inline md:row-start-4 md:col-start-8 md:row-span-2 md:col-span-1 md:place-self-center">
+            md:row-start-7 md:col-start-7 md:row-span-2 md:col-span-1 md:place-self-center">
                 <img class="w-10 md:w-10 " src="http://dl10.glitter-graphics.net/pub/1010/1010710flw54kyeyn.gif">
             </div>
 
             <!-- karet -->
             <div class="z-0 row-start-1 col-start-1 row-span-5 col-span-5
-            md:hidden">
-                <img class="w-full" src="http://dl.glitter-graphics.net/pub/47/47001h3xuk0j60x.gif">
+            md:row-start-1 md:col-start-4 md:row-span-4 md:col-span-4">
+                <img class="w-full md:w-80 md:pb-10" src="http://dl.glitter-graphics.net/pub/47/47001h3xuk0j60x.gif">
             </div>
 
         
             <!-- øjne -->
-            <div class="row-start-18 col-start-3 row-span-1 col-span-1
-			md:hidden">
+            <div class="row-start-17 col-start-3 row-span-1 col-span-1
+			md:row-start-12 md:col-start-5 md:row-span-1 md:col-span-1">
                 <a href="/#myprojects">
                     <img src="http://dl.glitter-graphics.net/pub/127/127461l6gyj8vwix.gif" width=600 height=140>
                 </a>
 			</div>
-            <div class="row-start-17 col-start-2 row-span-1 col-span-3 place-self-center
-            md:hidden" >
+            <div class="row-start-16 col-start-2 row-span-1 col-span-3 place-self-center
+            md:row-start-11 md:col-start-5 md:row-span-1 md:col-span-1" >
                 <a href="/#myprojects">
                     <p class="underline font-serif text-gray-300 text-[15px]" >
                         have a look
