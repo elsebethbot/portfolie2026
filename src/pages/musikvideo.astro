@@ -8,6 +8,11 @@ import Header from '../components/header.astro'
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>EDUPSCH</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
 	</head>
 
 <body class="m-0 pt-15">
@@ -21,8 +26,8 @@ import Header from '../components/header.astro'
 
         <!-- specs -->
         <div class="hidden
-        md:inline md:z-10 md:row-start-15 md:col-start-8 md:row-span-3 md:col-span-2 md:place-self-center">
-            <img class="md:w-30" src="/billeder/musikvideo/specs_musikvideo.jpg">
+        md:inline md:z-10 md:row-start-14 md:col-start-2 md:row-span-3 md:col-span-2 md:place-self-center">
+            <img class="md:w-40 grayscale" src="/billeder/musikvideo/specs_musikvideo.jpg">
         </div>
 
         <div class="row-start-2 col-start-1 col-span-4 row-span-4
@@ -66,15 +71,23 @@ import Header from '../components/header.astro'
         </div>
         
         <div class="row-start-11 col-start-1 col-span-4
-        md:row-start-14 md:col-start-4 md:row-span-1 md:col-span-5">
+        md:hidden">
             <p class="z-10 text-center font-serif italic text-blue-600 text-[40px]
             md:text-[60px]">
                 the lucid castle
             </p>
         </div>
+        <div class="hidden
+        md:inline md:row-start-14 md:col-start-4 md:row-span-2 md:col-span-5">
+            <p style="font-family: 'Ballet', cursive;" 
+            class="z-10 text-center font-serif italic text-blue-600 
+            md:text-[110px]">
+                The lucid castle
+            </p>
+        </div>
 
         <div class="row-start-12 col-start-1 col-span-4
-        md:row-start-16 md:col-start-4 md:row-span-2 md:col-span-4">
+        md:row-start-16 md:col-start-5 md:row-span-2 md:col-span-4">
             <p class="z-10  font-serif text-center text-blue-600 text-[20px] pl-5
             md:p-0">
                 you are caught in a lucid dream..

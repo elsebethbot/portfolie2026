@@ -10,6 +10,11 @@ import Header from '../components/header.astro'
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>EDUPSCH</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
 	</head>
 
 
@@ -23,7 +28,7 @@ import Header from '../components/header.astro'
         <!-- specs -->
         <div class="hidden
         md:inline md:row-start-10 md:col-start-9 md:row-span-3 md:col-span-2 md:place-self-center">
-            <img class="md:p-12" src="/billeder/cphdox/specs_cphdox.jpg">
+            <img class="md:p-12 grayscale" src="/billeder/cphdox/specs_cphdox.jpg">
         </div>
 
 
@@ -59,32 +64,36 @@ import Header from '../components/header.astro'
                 <br> this is my creative playground.
             </p>
         </div>
+
         <div class="z-10 row-start-20 col-start-1 col-span-4 row-span-2
-        md:row-start-12 md:col-start-3 md:row-span-1 md:col-span-3">
+        md:hidden">
             <p class="font-serif italic text-blue-600 text-[40px] pt-20">
                 let's partiiiiiiii!
             </p>
         </div>
+        <div class="hidden
+        md:inline md:row-start-13 md:col-start-3 md:row-span-2 md:col-span-4">
+            <p style="font-family: 'Ballet', cursive;" 
+            class=" text-blue-600 text-[100px]">
+                Let's partiiiiiiii!
+            </p>
+        </div>
+
         <div class="z-8 row-start-19 col-start-4 row-span-3 place-self-center 
-        md:row-start-13 md:col-start-4 md:row-span-3 md:col-span-1">
+        md:row-start-15 md:col-start-4 md:row-span-3 md:col-span-1">
             <img class="p-4 md:p-0" src="/billeder/cphdox/hahamig2.gif" class="saturate-200 w-50">
         </div>
 
         <!-- emojiesss -->
         <div class="row-start-22 col-start-1 row-span-1 col-span-1
-        md:row-start-12 md:col-start-7">
+        md:row-start-12 md:col-start-6 md:place-self-center">
             <p class="text-[30px]">
                 🪩
             </p>
         </div>
+        
         <div class="hidden
-        md:inline md:row-start-14 md:col-start-6">
-            <p class="text-[30px]">
-                🦄
-            </p>
-        </div>
-        <div class="hidden
-        md:inline md:row-start-16 md:col-start-3">
+        md:inline md:row-start-14 md:col-start-2 md:place-self-end">
             <p class="text-[30px]">
                 🧃
             </p>

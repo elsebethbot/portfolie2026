@@ -11,6 +11,11 @@ import Header from '../components/header.astro'
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>EDUPSCH</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
 	</head>
 
 <body class="m-0 pt-15">
@@ -23,7 +28,7 @@ import Header from '../components/header.astro'
         <!-- specs -->
         <div class="hidden
         md:inline md:row-start-11 md:col-start-2 md:row-span-3 md:col-span-2 md:place-self-center">
-            <img src="/billeder/aabenOel/specs_aaben.jpg" class="md:p-8">
+            <img src="/billeder/aabenOel/specs_aaben.jpg" class="md:p-8 grayscale">
         </div>
 
         <div class="row-start-2 col-start-1 col-span-1 row-span-2 place-self-center
@@ -152,10 +157,11 @@ import Header from '../components/header.astro'
             </p>
         </div>
         <div class="hidden
-        md:inline md:row-start-17 md:col-start-5 md:col-span-4 md:row-span-1">
+        md:inline md:row-start-17 md:col-start-5 md:col-span-6 md:row-span-1">
             <p class="md:font-serif md:text-blue-600 md:text-[42px]
             md:pb-50">
-                in the name of beer, let the creative juices flow!
+                in the name of beer; 
+                <br> <span style="font-family: 'Ballet', cursive;" class="text-[100px]">Let the creative juices flow!</span>
             </p>
         </div>
 

@@ -10,6 +10,11 @@ import HoverImage from '../components/hoverImage.astro'
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>EDUPSCH</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
 	</head>
 
 
@@ -23,27 +28,23 @@ import HoverImage from '../components/hoverImage.astro'
 
         <!-- specs -->
         <div class="hidden
-        md:inline md:z-10 md:row-start-1 md:col-start-1 md:row-span-2 md:col-span-2 md:place-self-center">
-            <img class="p-8" src="/billeder/citybranding/specs_glasgow.jpg">
+        md:inline md:z-10 md:row-start-12 md:col-start-2 md:row-span-2 md:col-span-2 md:place-self-center">
+            <img class="md:w-50 md:pr-5 grayscale" src="/billeder/citybranding/specs_glasgow.jpg">
         </div>
         <div class="hidden
         md:inline md:z-10 md:row-start-20 md:col-start-5 md:row-span-3 md:col-span-2 md:place-self-center">
-            <img class="p-8" src="/billeder/citybranding/research_glasgow.jpg">
+            <img class="p-8 grayscale" src="/billeder/citybranding/research_glasgow.jpg">
         </div>
         
         <!-- slot emoji -->
         <div class="row-start-2 col-start-2 col-span-2
-        md:row-start-2 md:col-start-3 md:row-span-1 md:col-span-1 md:flex md:items-end md:justify-center">
+        md:hidden">
             <p class="z-10 text-[60px] place-self-center
              md:text-[40px] md:place-self-auto">
                 &#x1F3F0; 
             </p>
         </div>
 
-        <div class="hidden
-        md:inline md:row-start-1 md:col-start-5">
-            <img src="/billeder/citybranding/tile.jpg" class="md:w-13 md:saturate-200 md:hue-rotate-180">
-        </div>
 
         <div class="z-10 row-start-3 col-start-2 col-span-2 row-span-3 place-self-center
         md:z-10 md:row-start-1 md:col-start-6 md:col-span-2 md:row-span-3 md:flex md:items-start md:justify-center md:place-self-auto">
@@ -58,7 +59,7 @@ import HoverImage from '../components/hoverImage.astro'
 
         <!-- dekorationer venstre -->
         <div class=" row-start-4 col-start-1 row-span-3
-        md:z-0 md:row-start-4 md:col-start-1 md:col-span-5 md:row-span-20 md:flex md:items-start md:justify-center">
+        md:hidden">
             <img class="z-0 w-full" src="/billeder/citybranding/dekorationer.png">
         </div>
         
@@ -80,10 +81,18 @@ import HoverImage from '../components/hoverImage.astro'
 
     
         <div class="z-10 row-start-6 col-start-1 row-span-2 col-span-4 place-self-center
-        md:z-10 md:row-start-3 md:col-start-1 md:col-span-3 md:row-span-1 md:place-self-auto">
+        md:hidden">
             <p class="font-serif text-blue-600 text-[40px] text-center
             md:text-[30px] md:italic md:text-blue-600">
                 im not coming to glasgow
+            </p>
+        </div>
+        <div class="hidden
+        md:inline md:z-10 md:row-start-3 md:col-start-1 md:col-span-6 md:row-span-2">
+            <p style="font-family: 'Ballet', cursive;" 
+            class=" text-blue-600
+            md:text-[80px]">
+                Im not coming to Glasgow
             </p>
         </div>
         
@@ -104,7 +113,7 @@ import HoverImage from '../components/hoverImage.astro'
 
         <!-- gothic lys -->
         <div class="row-start-14 col-start-1 row-span-4 
-        md:z-10 md:row-start-13 md:col-start-6 md:row-span-3 md:col-span-1 md:place-self-center">
+        md:z-10 md:row-start-21 md:col-start-4 md:row-span-3 md:col-span-1 md:place-self-center">
             <img class="z-10 pt-8" src="http://dl3.glitter-graphics.net/pub/2412/2412943ezxh69s19h.gif" width=186 height=351>
         </div>
 
@@ -112,7 +121,7 @@ import HoverImage from '../components/hoverImage.astro'
         <div class="row-start-14 col-start-2 col-span-3 row-span-3 place-self-center
         md:z-10 md:row-start-10 md:col-start-4 md:row-span-3 md:col-span-5 ">
             <p class="font-serif italic text-[28px] text-blue-600
-            md:text-[50px] md:p-8 md:pt-15">
+            md:text-[40px] md:p-8 md:pt-15">
                 presenting:
                 <br>a dynamic visual identity for glasgow
             </p>
@@ -143,7 +152,7 @@ import HoverImage from '../components/hoverImage.astro'
 
         <!-- gothic divider -->
         <div class="row-start-28 col-start-3 col-span-2 
-        md:inline md:row-start-22 md:col-start-6 md:col-span-4 md:row-span-4 md:place-self-center">
+        md:inline md:row-start-13 md:col-start-3 md:col-span-4 md:row-span-4 md:place-self-center">
             <img src="http://dl.glitter-graphics.net/pub/1267/1267191mfv4r3f4ab.gif" width=477 height=332>
         </div>
 
