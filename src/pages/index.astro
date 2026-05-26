@@ -1,6 +1,7 @@
 ---
   import '../styles/global.css' 
   import NameTag from '../components/nameTag.astro'
+  import HoverImage from '../components/hoverImage.astro'
   
 ---
 
@@ -10,6 +11,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>EDUPSCH</title>
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
 	</head>
 
 
@@ -26,8 +32,16 @@
 			
 			
 			<div class="row-start-4 row-span-3 col-start-1 col-span-3 w-40 place-self-center
-			md:row-start-1 md:col-start-4 md:col-span-3 md:row-span-5 md:w-70">
+			md:hidden">
 				<img src="/billeder/landofels2.jpg">
+			</div>
+
+			<div class="hidden
+			md:inline md:z-0 md:row-start-1 md:col-start-1 md:row-span-8 md:col-span-11">
+				<p style="font-family: 'Ballet', cursive;" 
+				class="text-gray-200 text-[350px]">
+					<HoverImage trigger="Elsebeth" src="/billeder/forsidefruen/spejl.jpg" width="w-20"/>
+				</p>
 			</div>
 
 
@@ -66,19 +80,19 @@
 
 			<!-- lys -->
 			<div class="hidden
-			md:inline md:row-start-4 md:col-start-1 md:row-span-4 md:col-span-2">
+			md:inline md:z-10 md:row-start-4 md:col-start-1 md:row-span-4 md:col-span-2">
 				<img src="http://dl7.glitter-graphics.net/pub/1742/1742527pod8ixyt2l.gif" width=182 height=216>
 			</div>
 
 			<!-- kat -->
 			<div class="hidden
-			md:inline md:z-0 md:row-start-2 md:col-start-6 md:row-span-8 md:col-span-8 ">
+			md:inline md:z-5 md:row-start-2 md:col-start-6 md:row-span-8 md:col-span-8 ">
 				<img class="md:w-200 md:grayscale" src="http://dl3.glitter-graphics.net/pub/3590/3590893rhbngnx3yw.gif">
 			</div>
 
 			<!-- djævle -->
 			<div class="hidden
-			md:inline md:row-start-1 md:col-start-4 md:row-span-2 md:col-span-1">
+			md:inline md:z-10 md:row-start-1 md:col-start-3 md:row-span-2 md:col-span-2 md:place-self-center">
 				<img class="md:w-20 md:grayscale" src="http://dl.glitter-graphics.net/pub/1157/1157101ygmr60gtf5.gif">
 			</div>
 
@@ -93,21 +107,21 @@
 
 			<!-- computer -->
 			<div class="row-start-14 col-start-1 row-span-2 col-span-2 w-20 place-self-center
-			md:row-start-4 md:col-start-5 md:row-span-2 md:col-span-2 md:place-self-center">
-				<img class="md:w-15" src="http://dl.glitter-graphics.net/pub/511/511791t0gnjo0n7k.gif" width=150 height=150>
+			md:hidden">
+				<img class="md:w-80" src="http://dl.glitter-graphics.net/pub/511/511791t0gnjo0n7k.gif">
 			</div>
 
 			<!-- tribal divider -->
 			<div class="row-start-7 col-start-2 w-30 place-self-center
-			md:row-start-6 md:col-start-5 md:col-span-1 md:row-span-1">
+			md:hidden">
 				<img src="http://dl.glitter-graphics.net/pub/621/621641xy2arhaa2t.gif" width=300 height=111>
 			</div>
 
 			<!-- dollartegn -->
-			<div class="row-start-2 col-start-2 col-span-2 place-self-center
+			<!-- <div class="row-start-2 col-start-2 col-span-2 place-self-center
 			md:row-start-4 md:col-start-7">
 				<img class="w-8" src="http://dl9.glitter-graphics.net/pub/766/766999jvyb8rl84u.gif" width=52 height=86>
-			</div>
+			</div> -->
 
 			<!-- peace tegn -->
 			<div class="row-start-4 col-start-1 place-self-center
@@ -115,45 +129,37 @@
 				<img class="w-10 md:w-30" src="http://dl6.glitter-graphics.net/pub/1892/1892496uma4rbp6ml.gif">
 			</div>
 
-			<!-- øjne + scroll or read -->
-			<div class="hidden
-			md:inline md:row-start-10 md:col-start-7 md:row-span-1 md:col-span-1">
-				<img src="http://dl.glitter-graphics.net/pub/127/127461l6gyj8vwix.gif" width=600 height=140>
-			</div>
-			<div class="hidden
-			md:inline md:row-start-9 md:col-start-7 md:row-span-1 md:col-span-1 md:place-self-center">
-				<p class="md:text-[20px] md:text-blue-600 md:font-serif md:pt-7">
-					scroll
-				</p>
-			</div>
-			<div class="hidden
-			md:inline md:row-start-10 md:col-start-8 md:row-span-1 md:col-span-1 md:text-center">
-				<p class="md:text-[20px] md:text-blue-600 md:font-serif">
-					or
-				</p>
-			</div>
+			
 		
-			<div class="row-start-13 col-start-3 row-span-1 col-span-1
-			md:inline md:row-start-10 md:col-start-9 md:row-span-1 md:col-span-1">
+			<!-- <div class="row-start-13 col-start-3 row-span-1 col-span-1
+			md:inline md:row-start-11 md:col-start-9 md:row-span-1 md:col-span-1">
 				<a href="/about">
 					<img class="invert" src="http://dl.glitter-graphics.net/pub/127/127461l6gyj8vwix.gif" width=600 height=140>
 				</a>
-			</div>
+			</div> -->
 			<div class="row-start-12 col-start-3 row-span-1 col-span-1 place-self-center
-			md:inline md:row-start-9 md:col-start-9 md:row-span-1 md:col-span-1 md:place-self-center">
+			md:inline md:z-10 md:row-start-9 md:col-start-4 md:row-span-2 md:col-span-1 md:place-self-center">
 				<a href="/about">
-					<p class="text-[20px] text-blue-600 font-serif pt-7 underline 
-					md:hover:underline md:no-underline ">
-						read
+					<p class="text-[20px] text-blue-600 font-serif pt-7 underline
+					md:hover:underline ">
+						read 
+						<span class="hidden md:inline"> <br> me</span> 
 					</p>
 				</a>
 			</div>
-			
+
+			<!-- grå rulle -->
+			<div class="hidden
+			md:inline md:row-start-9 md:col-start-4 md:row-span-2 md:col-span-1 md:place-self-center">
+				<a href="/about">
+					<img class="md:w-20" src="/billeder/graaRulle.jpg">
+				</a>
+			</div>
 
 
 			<div class="col-start-1 col-span-4 row-start-15 row-span-5 place-self-center
 			md:row-start-6 md:col-start-1">
-				<p class="font-serif italic text-[30px] text-blue-600 p-1 pt-10
+				<p class="font-serif italic text-[30px] text-gray-500 p-1 pt-10
 				md:pt-0" lang="en">
 					i design with great <span class="bg-pink-500 text-cyan-300">passion.</span>
 					i feel an <span class="bg-lime-300 text-pink-500">obligation</span> to be bold
@@ -162,18 +168,18 @@
 				</p>
 			</div>
 			
-			<p class="col-start-1 row-start-13 row-span-2 text-[30px] text-center align-text-bottom
+			<!-- <p class="col-start-1 row-start-13 row-span-2 text-[30px] text-center align-text-bottom
 			md:row-start-1 md:col-start-1 md:row-span-1 md:text-start">
 				🫟
-			</p>
+			</p> -->
 			<p class="col-start-3 row-start-14 row-span-2 text-[50px] text-center align-text-top
 			md:row-start-6 md:col-start-2 md:col-span-2">
 				🫀
 			</p>
-			<p class="col-start-1 row-start-20 text-[30px] text-right align-text-bottom
+			<!-- <p class="col-start-1 row-start-20 text-[30px] text-right align-text-bottom
 			md:row-start-9 md:col-start-4">
 				💋
-			</p>
+			</p> -->
 			<div class="col-start-3 row-start-20 w-12
 			md:row-start-9 md:col-start-5">
 				<img src="/billeder/manden.jpg" class="md:hover:invert">
@@ -203,6 +209,8 @@
 				md:inline md:row-start-1 md:col-start-4 md:col-span-1 md:row-span-1">
 					<img src="/billeder/death.png">
 				</div>
+
+				
 
 				<!-- city branding -->
 				<div class="col-start-1 row-start-3 row-span-2 col-span-3 w-60 place-self-center
@@ -326,12 +334,19 @@
 				</div>
 
 				<div class="hidden
-				md:inline z-10 md:row-start-13 md:col-start-6 md:row-span-1 md:col-span-3">
-					<p class="md:font-serif md:text-pink-600 md:text-[20px]">
-						oops, dropped my bag ......
+				md:inline z-10 md:row-start-13 md:col-start-7 md:row-span-2 md:col-span-3 md:place-self-center">
+					<p class="md:font-serif md:text-pink-600 md:text-[40px]">
+						dropped my bag ......
 					</p>
 				</div>
-			
+				<div class="hidden
+				md:inline z-10 md:row-start-12 md:col-start-6 md:row-span-3 md:col-span-4">
+					<p style="font-family: 'Ballet', cursive;" 
+					class="md:font-serif md:text-pink-600 md:text-[230px]">
+						ooops!
+					</p>
+				</div>
+				
 
 
 			</div>

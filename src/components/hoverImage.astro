@@ -2,7 +2,7 @@
 const { trigger, src, width = "w-40" } = Astro.props;
 ---
 
-<span id={trigger} class="cursor-pointer underline">{trigger}</span>
+<span id={trigger} class="cursor-pointer ">{trigger}</span>
 
 <img id={`${trigger}-img`} src={src} 
     class={`fixed pointer-events-none hidden ${width} z-50`}>
