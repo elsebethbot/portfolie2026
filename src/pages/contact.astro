@@ -1,0 +1,54 @@
+---
+import '../styles/global.css' 
+import Header from '../components/header.astro'
+---
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>EDUPSCH</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+	</head>
+
+
+    <body>
+
+        <div class="grid grid-rows-8 grid-cols-11 p-5 overflow-hidden">
+
+            <div class="hidden
+			md:inline md:z-0 md:row-start-1 md:col-start-1 md:row-span-6 md:col-span-11 fixed">
+				<p style="font-family: 'Ballet', cursive;" 
+				class="text-gray-200 text-[350px]">
+					Elsebeth
+				</p>
+			</div>
+
+            <div class="z-5 row-start-4 col-start-2 row-span-4 col-span-9">
+                <p style="font-family: 'Ballet', cursive;" 
+                class="text-gray-400 text-[200px] text-center pl-25">
+                    im chronically online
+                </p>
+            </div>
+
+            <div class="md:z-10 md:row-start-6 md:col-start-3 md:row-span-3 md:col-span-4">
+                <p class="font-serif text-pink-500 text-[30px]">
+                    <br> instagram: elsebethbot
+                    <br> mail: elsebethe2@gmail.com
+                    <br> tumblr: e-2000.tumblr.com
+                </p>
+            </div>
+
+
+
+
+        </div>
+    </body>
+</html>
