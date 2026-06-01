@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Interlope-Regular';
+    src: url('/fonts/Interlope-Regular.woff2') format('woff2'),
+         url('/fonts/Interlope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@theme {
+--font-interlope: 'Interlope-Regular', sans-serif;
+}
