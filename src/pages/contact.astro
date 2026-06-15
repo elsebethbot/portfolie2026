@@ -21,25 +21,29 @@ import Header from '../components/header.astro'
 
     <body>
 
-        <div class="grid grid-rows-8 grid-cols-11 p-5 overflow-hidden">
+        <div class="grid grid-rows-10 grid-cols-4 p-5 overflow-hidden
+        md:grid-rows-8 md:grid-cols-11">
 
-            <!-- style="font-family: 'Ballet', cursive;"  -->
-            <div class="hidden
+            
+            <div class="hidden 
 			md:inline md:z-0 md:row-start-1 md:col-start-1 md:row-span-6 md:col-span-11 fixed">
 				<p 
-				class="text-gray-100 text-[350px] font-interlope">
+				class="text-gray-100 text-[100px] md:text-[350px] font-interlope">
 					Elsebeth
 				</p>
 			</div>
 
-            <div class="z-5 row-start-5 col-start-1 row-span-2 col-span-9">
+            <div class="z-5 col-start-1 row-start-1 col-span-4 row-span-6
+            md:row-start-5 md:col-start-1 md:row-span-2 md:col-span-9">
                 <p 
-                class="text-gray-400 text-[100px] text-center pl-25 font-interlope">
-                    im chronically online
+                class="text-gray-400 font-interlope text-[70px] text-center
+                md:text-[100px] md:pl-25 ">
+                    im chronically online 
                 </p>
             </div>
 
-            <div class="md:z-10 md:row-start-6 md:col-start-3 md:row-span-3 md:col-span-4">
+            <div class="col-start-1 row-start-7 col-span-4 row-span-4
+            md:z-10 md:row-start-6 md:col-start-3 md:row-span-3 md:col-span-4">
                 <p class="font-terminal text-pink-500 text-[30px]">
                     <br> <span class="hover:text-blue-600"><a href="https://www.instagram.com/elsebethbot/">instagram: elsebethbot</a></span>
                     <br> <span class="hover:text-blue-600"><a href="https://e-2000.tumblr.com">tumblr: e-2000.tumblr.com</a></span>
